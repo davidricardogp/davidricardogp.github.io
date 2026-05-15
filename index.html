@@ -31,7 +31,10 @@
 
     .topbar {
       border-bottom: 1px solid var(--line);
-      padding: 0 32px;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       position: sticky;
       top: 0;
       background: rgba(255, 255, 255, 0.96);
@@ -39,45 +42,22 @@
       z-index: 10;
     }
 
-    .topbar-inner {
-      max-width: 1160px;
-      margin: 0 auto;
-      min-height: 68px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 28px;
-    }
-
-    .topbar .name {
-      font-weight: 700;
-      font-size: 18px;
-      white-space: nowrap;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 22px;
-      flex-wrap: nowrap;
-    }
+    .topbar .name { font-weight: 700; font-size: 18px; }
 
     .nav a {
+      margin-left: 22px;
       color: var(--text);
       font-size: 15px;
-      white-space: nowrap;
     }
 
     .layout {
       max-width: 1160px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 300px minmax(0, 760px);
-      gap: 56px;
+      grid-template-columns: 300px 1fr;
+      gap: 52px;
       padding: 50px 32px;
       align-items: start;
-      justify-content: center;
     }
 
     .sidebar {
@@ -256,18 +236,8 @@
     }
 
     @media (max-width: 850px) {
-      .topbar { padding: 14px 20px; }
-      .topbar-inner {
-        min-height: auto;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
-      }
-      .nav {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 12px 16px;
-      }
+      .topbar { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .nav a { margin-left: 0; margin-right: 16px; }
       .layout { grid-template-columns: 1fr; gap: 28px; padding: 32px 20px; }
       .sidebar { position: static; }
     }
@@ -275,9 +245,8 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="topbar-inner">
-      <div class="name">David Ricardo Gonzales Peña</div>
-      <nav class="nav">
+    <div class="name">David Ricardo Gonzales Peña</div>
+    <nav class="nav">
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
@@ -285,8 +254,7 @@
       <a href="#awards">Awards &amp; Fellowships</a>
       <a href="#publications">Public Writing</a>
       <a href="#conferences">Conferences</a>
-      </nav>
-    </div>
+    </nav>
   </header>
 
   <div class="layout">
@@ -384,15 +352,15 @@
           <div class="item-title">Fundraising Analyst — beder</div>
           <div class="item-meta">Barcelona, Spain · Sep. 2023 – Jan. 2025</div>
           <p>
-            Managed public funding application processes, including pre-seed funding rounds of up to €0.5M.
+            Helped create the company and supported its funding strategy, including public funding applications and pre-seed fundraising processes of up to €0.5M.
           </p>
         </div>
 
         <div class="item">
-          <div class="item-title">Teaching Assistant — Universidad de Piura</div>
+          <div class="item-title">Undergraduate Teaching Assistant — Universidad de Piura</div>
           <div class="item-meta">Lima, Peru · Mar. 2023 – Jul. 2023</div>
           <p>
-            Teaching Assistant for Political and Economic Thought under the guidance of Ignacio Soto Llosa, Ph.D.
+            Assisted Ignacio Soto Llosa, Ph.D., in the undergraduate course Political and Economic Thought, supporting lecture preparation, class materials, and student learning.
           </p>
         </div>
 
@@ -408,7 +376,7 @@
           <div class="item-title">Economic Consulting Intern — Bullard Falla Ezcurra+</div>
           <div class="item-meta">Lima, Peru · Aug. 2022 – Dec. 2022</div>
           <p>
-            Conducted analytical work on market dynamics, damage assessments, M&A, and competition authority investigations.
+            Secured the internship after becoming a semifinalist in the E-Moot Libre Competencia 2022, and conducted analytical work on market dynamics, damage assessments, M&A, and competition authority investigations.
           </p>
         </div>
       </section>
@@ -457,6 +425,10 @@
           <li>Fellowship for the Winter Methods School: Measuring Citizen’s Digital Behaviours, Universitat Pompeu Fabra.</li>
           <li>In Altum Scholarship for the Law and Politics Summer School, Busch School of Business — The Catholic University of America.</li>
           <li>Academic Performance Scholarship — Universidad de Piura.</li>
+          <li>
+            <a href="https://www.udep.edu.pe/hoy/2022/09/alumnos-de-economia-obtienen-el-2do-puesto-en-el-cfa-institute-ethics-challenge/" target="_blank" rel="noopener">Second Place — CFA Institute Ethics Challenge Peru 2022</a> — Represented Universidad de Piura for the CFA national competition for a business ethics case under the CFA Institute Code of Ethics and Standards of Professional Conduct.
+          </li>
+          <li>E-Moot Libre Competencia 2022 — Semifinalist in the competition law moot organized by Universidad del Pacífico and Bullard Falla Ezcurra+, an experience that helped lead to an internship at Bullard Falla Ezcurra+.</li>
           <li>Youth Parliamentarian 2019 representing the region of Piura — Congress of the Republic of Peru.</li>
         </ul>
       </section>
@@ -493,6 +465,14 @@
         <h2>Conferences and Talks</h2>
 
         <div class="publication">
+          <div class="item-title">Host — Entrepreneurship &amp; Innovation Center Meeting</div>
+          <div class="item-meta">IESE Business School · Barcelona, Spain · May 06, 2026</div>
+          <p>
+            The session brought together academic and practitioner perspectives to discuss how experimentation spaces and emerging technologies can help institutions, corporates, and startups build more effective innovation capabilities.
+          </p>
+        </div>
+
+        <div class="publication">
           <div class="item-title"><a href="https://drive.google.com/file/d/12CLcknYh1GFRzonKzdjrqnSI0cFovHrP/view?usp=sharing" target="_blank" rel="noopener">Speaker — XIX Foro de Inversión</a></div>
           <div class="item-meta">PAD - Escuela de Dirección · Lima, Peru · August 22, 2025</div>
           <p>
@@ -505,14 +485,6 @@
           <div class="item-meta">Hub UDEP · Piura, Peru · August 05, 2025</div>
           <p>
             Talk on what public policies can help startups grow, attract capital, collaborate with corporations, and scale beyond early-stage barriers. The session connected international policy lessons with the challenges faced by entrepreneurial ecosystems in Peru and Latin America.
-          </p>
-        </div>
-
-        <div class="publication">
-          <div class="item-title">Host — Entrepreneurship &amp; Innovation Center Meeting</div>
-          <div class="item-meta">IESE Business School · Barcelona, Spain · May 06, 2026</div>
-          <p>
-            The session brought together academic and practitioner perspectives to discuss how experimentation spaces and emerging technologies can help institutions, corporates, and startups build more effective innovation capabilities.
           </p>
         </div>
       </section>
