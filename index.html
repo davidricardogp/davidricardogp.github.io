@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Ricardo Gonzales Peña</title>
+  <style>
+    :root {
+      --text: #1f2933;
+      --muted: #5f6b76;
+      --line: #e6e8eb;
+      --accent: #0f4c81;
+      --accent-soft: #eaf2f8;
+      --bg: #ffffff;
+      --sidebar-bg: #f8fafc;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    .topbar .name { font-weight: 700; font-size: 18px; }
+
+    .nav a {
+      margin-left: 22px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .layout {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 52px;
+      padding: 50px 32px;
+    }
+
+    .sidebar {
+      background: var(--sidebar-bg);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px;
+      height: fit-content;
+      position: sticky;
+      top: 88px;
+    }
+
+    .avatar {
+      width: 168px;
+      height: 168px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d7e7f5, #f4f7fb);
+      border: 1px solid var(--line);
+      margin: 0 auto 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 42px;
+      font-weight: 750;
+      letter-spacing: -1px;
+    }
+
+    .sidebar h2 {
+      margin: 0;
+      font-size: 22px;
+      text-align: center;
+      line-height: 1.25;
+    }
+
+    .role {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    .tagline {
+      margin-top: 18px;
+      font-size: 15px;
+      color: #334155;
+    }
+
+    .meta {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .meta div { margin: 8px 0; }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 14px;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      color: var(--accent);
+      font-weight: 650;
+      font-size: 14px;
+    }
+
+    .button:hover {
+      background: var(--accent-soft);
+      text-decoration: none;
+    }
+
+    main { max-width: 790px; }
+
+    h1 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin: 0 0 10px;
+      letter-spacing: -0.4px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0 0 24px;
+    }
+
+    h2 {
+      margin-top: 46px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 23px;
+    }
+
+    h3 { margin-bottom: 6px; font-size: 18px; }
+    p { margin: 12px 0; }
+
+    .item { margin: 24px 0; }
+    .item-title { font-weight: 700; }
+    .item-meta { color: var(--muted); font-size: 14px; margin-top: 2px; }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .pill {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    ul { padding-left: 22px; }
+
+    .publication {
+      margin: 18px 0;
+      padding-left: 16px;
+      border-left: 3px solid var(--accent-soft);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      padding: 28px 32px;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 850px) {
+      .topbar { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .nav a { margin-left: 0; margin-right: 16px; }
+      .layout { grid-template-columns: 1fr; gap: 28px; padding: 32px 20px; }
+      .sidebar { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="name">David Ricardo Gonzales Peña</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="avatar">DG</div>
+      <h2>David Ricardo Gonzales Peña</h2>
+      <div class="role">Economist · Research Assistant</div>
+      <p class="tagline">
+        Research Assistant at IESE Business School’s Entrepreneurship & Innovation Center, working on applied research in policymaking, corporate innovation, technology transfer, startups, and scaleups.
+      </p>
+      <div class="meta">
+        <div>📍 Barcelona, Spain</div>
+        <div>🏛 IESE Business School</div>
+        <div>✉️ <a href="mailto:dgonzales.p@outlook.com">dgonzales.p@outlook.com</a></div>
+        <div>🔗 <a href="https://www.linkedin.com/in/davidricardogp/" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div>🌍 Work authorization: European Union, Peru</div>
+      </div>
+      <a class="button" href="David_Ricardo_Gonzales_Pena_CV.pdf">Download CV</a>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h1>David Ricardo Gonzales Peña</h1>
+        <p class="subtitle">Economist interested in public policy, innovation, entrepreneurship, and economic development.</p>
+
+        <p>
+          I am an economist from Peru, currently based in Barcelona, Spain. I work as a Research Assistant at IESE Business School’s Entrepreneurship & Innovation Center, where I contribute to applied research on policymaking, corporate innovation, technology transfer, startups, and scaleups.
+        </p>
+
+        <p>
+          My academic and professional interests lie at the intersection of innovation policy, entrepreneurship ecosystems, public-private collaboration, and evidence-based institutional design. I am especially interested in how governments, universities, corporations, and investors can support technological entrepreneurship and help startups and scaleups overcome financing, procurement, and ecosystem barriers.
+        </p>
+
+        <p>
+          Before joining IESE, I worked in startup fundraising, economic consulting, academic research, and teaching assistance. My long-term goal is to pursue graduate and doctoral studies and contribute to rigorous research that helps improve public policy and economic opportunity.
+        </p>
+
+        <div class="pill-row">
+          <span class="pill">Innovation policy</span>
+          <span class="pill">Entrepreneurship</span>
+          <span class="pill">Deep-tech scaleups</span>
+          <span class="pill">Corporate innovation</span>
+          <span class="pill">Public policy</span>
+          <span class="pill">Applied economics</span>
+        </div>
+      </section>
+
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Innovation policy and entrepreneurship ecosystems</li>
+          <li>Deep-tech scaleups and the European growth capital gap</li>
+          <li>Corporate venturing and startup-corporate collaboration</li>
+          <li>Public procurement for innovation</li>
+          <li>Technology transfer and university-industry collaboration</li>
+          <li>Evidence-based policymaking and institutional design</li>
+          <li>Economic development in Europe and Latin America</li>
+        </ul>
+
+        <h2>Research in Progress</h2>
+        <div class="item">
+          <div class="item-title">European Innovation Council: Scaling Club</div>
+          <div class="item-meta">Associated with IESE Business School · Jan. 2025 – Present</div>
+          <p>
+            Applied research on European deep-tech scaleups, focusing on corporate innovation, technology transfer, public-private collaboration, and scaleup ecosystems.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">EU-LAC Foundation: Research Team</div>
+          <div class="item-meta">Associated with IESE Business School · Apr. 2026 – Present</div>
+          <p>
+            Research on the EU-LAC Digital Accelerator as a platform for cross-regional corporate-startup collaboration, including accelerator design, partnership barriers, and pilot execution.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru</div>
+          <div class="item-meta">Undergraduate thesis · Second Place, Ashok Kowalk Best Thesis Award 2024</div>
+          <p>
+            Undergraduate thesis in applied economics using a Bartik-style approach to estimate fuel demand elasticity in Lima, Peru.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="item">
+          <div class="item-title">Research Assistant — Entrepreneurship & Innovation Center, IESE Business School</div>
+          <div class="item-meta">Barcelona, Spain · Jan. 2025 – Present</div>
+          <p>
+            Focused on applied research in policymaking, corporate innovation, technology transfer, startups, and scaleups.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Visiting Research Fellow — University of Alicante</div>
+          <div class="item-meta">Alicante, Spain · Jan. 2026 – Present</div>
+          <p>
+            Supporting academic research in behavioral economics, research impact, and open science for Arne Weiss, Ph.D.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Fundraising Analyst — beder</div>
+          <div class="item-meta">Barcelona, Spain · Sep. 2023 – Jan. 2025</div>
+          <p>
+            Managed public funding application processes, including pre-seed funding rounds of up to €0.5M.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Teaching Assistant — Universidad de Piura</div>
+          <div class="item-meta">Lima, Peru · Mar. 2023 – Jul. 2023</div>
+          <p>
+            Teaching Assistant for Political and Economic Thought under the guidance of Ignacio Soto Llosa, Ph.D.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Undergraduate Research Assistant — Universidad de Piura</div>
+          <div class="item-meta">Lima, Peru · Jan. 2023 – May 2023</div>
+          <p>
+            Assisted Miguel Carpio, Ph.D., with research projects related to education, development economics, and banking.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Economic Consulting Intern — Bullard Falla Ezcurra+</div>
+          <div class="item-meta">Lima, Peru · Aug. 2022 – Dec. 2022</div>
+          <p>
+            Conducted analytical work on market dynamics, damage assessments, M&A, and competition authority investigations.
+          </p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+
+        <div class="item">
+          <div class="item-title">B.Sc. Economics — Universidad de Piura</div>
+          <div class="item-meta">Lima, Peru · Mar. 2019 – Jan. 2024</div>
+          <p>
+            Second Place — Best Thesis Award, Ashok Kowalk Prize 2024, for “Bartik approach for estimating the price elasticity of demand for gasohol: Lima, Peru.”
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Bachelor’s Exchange, Economics — Universitat Pompeu Fabra</div>
+          <div class="item-meta">Barcelona, Spain · Sep. 2023 – Dec. 2023</div>
+          <p>
+            Exchange coursework in economics and social sciences.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Bachelor’s Exchange, Commercial Engineering — Universidad Diego Portales</div>
+          <div class="item-meta">Santiago, Chile · Mar. 2023 – Jul. 2023</div>
+          <p>
+            Exchange coursework in labour economics and environmental economics.
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Summer School, Digital and Energy Economics — Barcelona School of Economics</div>
+          <div class="item-meta">Barcelona, Spain · Jun. 2024</div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications and Selected Writing</h2>
+
+        <div class="publication">
+          <div class="item-title">Transformar las Instituciones: el camino hacia un Perú próspero</div>
+          <div class="item-meta">Instituto Peruano de Economía · Dec. 2024</div>
+        </div>
+
+        <div class="publication">
+          <div class="item-title">SDG 4: Quality Education | Match-A-Buddy</div>
+          <div class="item-meta">University of Oxford: The Oxford Character Project · Jan. 2025</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Honors, Fellowships, and Distinctions</h2>
+        <ul>
+          <li>Selected for The Oxford Character Project Global Leaders Cohort 2024, among the top 1.82% of candidates.</li>
+          <li>Selected by the Peruvian Institute of Economics as one of Peru’s 50 influential young leaders, representing Piura.</li>
+          <li>Scholarship for the Digital and Energy Economics Summer School, Barcelona School of Economics.</li>
+          <li>Scholarship for the Winter Methods School: Measuring Citizen’s Digital Behaviours, UPF Research and Expertise Centre for Survey Methodology.</li>
+          <li>Scholarship for the In Altum Program: Law and Politics Summer School, The Catholic University of America.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Applied research and literature reviews</li>
+          <li>Econometrics, Stata, R, Microsoft Excel, and data analysis</li>
+          <li>Policy benchmarking and institutional analysis</li>
+          <li>Public funding applications and stakeholder mapping</li>
+          <li>Executive writing and research communication</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li>Spanish — Native or bilingual proficiency</li>
+          <li>English — Full professional proficiency</li>
+        </ul>
+      </section>
+
+      <section id="cv">
+        <h2>CV</h2>
+        <p>
+          A full CV is available upon request. You may also connect with me through LinkedIn or contact me by email.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2026 David Ricardo Gonzales Peña. Built as a simple academic homepage for GitHub Pages.
+  </footer>
+</body>
+</html>
