@@ -31,10 +31,6 @@
 
     .topbar {
       border-bottom: 1px solid var(--line);
-      padding: 16px 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       position: sticky;
       top: 0;
       background: rgba(255, 255, 255, 0.96);
@@ -42,12 +38,33 @@
       z-index: 10;
     }
 
-    .topbar .name { font-weight: 700; font-size: 18px; }
+    .topbar-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .topbar .name {
+      font-weight: 700;
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
 
     .nav a {
       margin-left: 22px;
       color: var(--text);
       font-size: 15px;
+      white-space: nowrap;
     }
 
     .layout {
@@ -236,8 +253,20 @@
     }
 
     @media (max-width: 850px) {
-      .topbar { align-items: flex-start; flex-direction: column; gap: 10px; }
-      .nav a { margin-left: 0; margin-right: 16px; }
+      .topbar-inner {
+        padding: 14px 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav {
+        flex-wrap: wrap;
+      }
+      .nav a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
       .layout { grid-template-columns: 1fr; gap: 28px; padding: 32px 20px; }
       .sidebar { position: static; }
     }
@@ -245,16 +274,18 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="name">David Ricardo Gonzales Peña</div>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#awards">Awards &amp; Fellowships</a>
-      <a href="#publications">Public Writing</a>
-      <a href="#conferences">Conferences</a>
-    </nav>
+    <div class="topbar-inner">
+      <div class="name">David Ricardo Gonzales Peña</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards &amp; Fellowships</a>
+        <a href="#publications">Public Writing</a>
+        <a href="#conferences">Conferences</a>
+      </nav>
+    </div>
   </header>
 
   <div class="layout">
@@ -333,7 +364,7 @@
         <h2>Experience</h2>
 
         <div class="item">
-          <div class="item-title">Research Assistant — Entrepreneurship &amp; Innovation Center, IESE Business School</div>
+          <div class="item-title">Research Assistant — Entrepreneurship & Innovation Center, IESE Business School</div>
           <div class="item-meta">Barcelona, Spain · Jan. 2025 – Present</div>
           <p>
             Focused on applied research in public policy, corporate venturing, and startup ecosystems.
@@ -368,12 +399,10 @@
           <div class="item-title">Economic Consulting Intern — Bullard Falla Ezcurra+</div>
           <div class="item-meta">Lima, Peru · Aug. 2022 – Dec. 2022</div>
           <p>
-            Secured the internship after becoming a semifinalist in the E-Moot Libre Competencia 2022, and conducted analytical work on market dynamics, damage assessments, M&amp;A, and competition authority investigations.
+            Secured the internship after becoming a semifinalist in the E-Moot Libre Competencia 2022, and conducted analytical work on market dynamics, damage assessments, M&A, and competition authority investigations.
           </p>
         </div>
       </section>
-
-      
 
       <section id="education">
         <h2>Education</h2>
