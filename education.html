@@ -12,6 +12,17 @@
 <header class="site-header">
   <div class="container header-row">
     <a class="brand" href="index.html">David Ricardo Gonzales Peña</a>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="nav">
       <a href="publications.html">Publications</a>
       <a href="experience.html">Experience</a>
@@ -131,6 +142,21 @@
   <span class="sep">·</span>
   <span>Site last updated Jul. 2026</span>
 </footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navigation = document.querySelector(".nav");
+
+  if (menuToggle && navigation) {
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navigation.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+});
+</script>
 
 </body>
 </html>
