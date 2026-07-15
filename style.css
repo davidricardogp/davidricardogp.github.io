@@ -60,12 +60,20 @@ a:hover{text-decoration:underline}
   white-space:nowrap;
 }
 
-/* Solo para móviles */
-@media (max-width: 620px) {
-  .brand {
-    font-size: 24px;
-    line-height: 1.2;
+@media (max-width: 600px) {
+  .brand{
+    font-size:20px;
+    line-height:1.15;
+    white-space:normal;
+    max-width:280px;
   }
+}
+
+@media (max-width:600px){
+    .photo img{
+        width:320px;
+        max-width:100%;
+    }
 }
 
 .brand:hover{
