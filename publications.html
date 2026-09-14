@@ -24,13 +24,14 @@
       type="button"
       aria-label="Open navigation menu"
       aria-expanded="false"
+      aria-controls="main-navigation"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="nav" aria-label="Main navigation">
+    <nav id="main-navigation" class="nav" aria-label="Main navigation">
       <a href="publications.html" class="active" aria-current="page">
         Publications
       </a>
@@ -126,6 +127,57 @@
       </div>
 
       <h3>Working Papers</h3>
+
+      <div class="publication">
+        <div class="item-title">
+          <a
+            href="https://doi.org/10.21203/rs.3.rs-10995280/v1"
+            rel="noopener"
+            target="_blank"
+          >
+            Unpacking Institutions: How Governance Quality Moderates the
+            Entrepreneurship-Growth Relationship
+          </a>
+        </div>
+
+        <div class="item-meta">
+          Research Square · Preprint · 2026
+        </div>
+
+        <p class="citation">
+          Gonzales Peña, D. R., Gonzales Castillo, J. R., &amp;
+          Varona Castillo, L. (2026).
+          <em>Unpacking institutions: How governance quality moderates the
+          entrepreneurship-growth relationship</em> [Preprint].
+          Research Square.
+          https://doi.org/10.21203/rs.3.rs-10995280/v1
+        </p>
+      </div>
+
+      <div class="publication">
+        <div class="item-title">
+          <a
+            href="https://doi.org/10.21203/rs.3.rs-10995861/v1"
+            rel="noopener"
+            target="_blank"
+          >
+            Fuel Demand, Spatial Competition, and Local Market Structure:
+            Evidence from Gasohol Retailing in Lima and Callao
+          </a>
+        </div>
+
+        <div class="item-meta">
+          Research Square · Preprint · 2026
+        </div>
+
+        <p class="citation">
+          Gonzales Peña, D. R., &amp; Gonzales Castillo, J. R. (2026).
+          <em>Fuel demand, spatial competition, and local market structure:
+          Evidence from gasohol retailing in Lima and Callao</em> [Preprint].
+          Research Square.
+          https://doi.org/10.21203/rs.3.rs-10995861/v1
+        </p>
+      </div>
 
       <div class="publication">
         <div class="item-title">
@@ -282,6 +334,10 @@
       menuToggle.addEventListener("click", function () {
         const isOpen = navigation.classList.toggle("is-open");
         menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
       });
     }
   });
