@@ -63,9 +63,9 @@ const KNOWLEDGE_BASE_EN: KnowledgeItem[] = [
       'David’s public essays and analytical writing (in chronological order):\n\n1. "Scaling Deep Tech in Europe: Where Do Priorities Diverge?" (IESE Blog, Jul. 2026):\n   https://blog.iese.edu/entrepreneurship/2026/07/27/scaling-deep-tech-in-europe-where-do-priorities-diverge/\n2. "Formalizar no puede ser una carrera de obstáculos" (Peruvian Institute of Economics - IPE, Jun. 2026):\n   https://ipe.org.pe/\n3. "Perú innova, pero todavía le cuesta convertir conocimiento en resultados" (Diario El Gobierno, Jun. 2026):\n   https://diarioelgobierno.com/peru-innova-pero-todavia-le-cuesta-convertir-conocimiento-en-resultados-por-david-ricardo-gonzales-pena/\n4. "SDG 4: Quality Education | Match-A-Buddy" (University of Oxford: The Oxford Character Project, Jan. 2025):\n   https://oxfordcharacter.org/\n5. "Transformar las Instituciones: el camino hacia un Perú próspero" (Peruvian Institute of Economics - IPE, Dec. 2024):\n   https://ipe.org.pe/'
   },
   {
-    keys: ['affiliations', 'community', 'wapor', 'altum', 'cohort', 'member', 'network', 'fellow'],
+    keys: ['affiliations', 'community', 'wapor', 'cohort', 'member', 'network', 'fellow'],
     answer:
-      'David’s professional affiliations and community memberships:\n\n• Peruvian Institute of Economics (IPE) — Ambassador, Young Leaders Network (2024–Present): https://ipe.org.pe/\n• Global Leaders Cohort (2024–Present, Oxford Social Sciences & St. Gallen): https://www.leadership-challenge.org/past-glc-2024\n• In Altum — Fellow & Alumni (2023–Present, The Catholic University of America): https://www.inaltumprogram.org/\n• WAPOR Latinoamérica — Chapter Member (2024–2025): https://waporlatinoamerica.org/'
+      'David’s professional affiliations and community memberships:\n\n• Peruvian Institute of Economics (IPE) — Ambassador, Young Leaders Network (2024–Present): https://ipe.org.pe/\n• Global Leaders Cohort (2024–Present, Oxford, UK): https://www.leadership-challenge.org/past-glc-2024\n• WAPOR Latinoamérica — Chapter Member (2024–2025): https://waporlatinoamerica.org/'
   },
   {
     keys: ['experience', 'work', 'worked', 'job', 'career', 'employment', 'roles', 'history', 'beder', 'bullard'],
@@ -151,9 +151,9 @@ const KNOWLEDGE_BASE_ES: KnowledgeItem[] = [
       'Ensayos y artículos de divulgación de David (orden cronológico):\n\n1. "Scaling Deep Tech in Europe: Where Do Priorities Diverge?" (Blog de IESE, jul. 2026):\n   https://blog.iese.edu/entrepreneurship/2026/07/27/scaling-deep-tech-in-europe-where-do-priorities-diverge/\n2. "Formalizar no puede ser una carrera de obstáculos" (Instituto Peruano de Economía - IPE, jun. 2026):\n   https://ipe.org.pe/\n3. "Perú innova, pero todavía le cuesta convertir conocimiento en resultados" (Diario El Gobierno, jun. 2026):\n   https://diarioelgobierno.com/peru-innova-pero-todavia-le-cuesta-convertir-conocimiento-en-resultados-por-david-ricardo-gonzales-pena/\n4. "SDG 4: Quality Education | Match-A-Buddy" (Universidad de Oxford: The Oxford Character Project, ene. 2025):\n   https://oxfordcharacter.org/\n5. "Transformar las Instituciones: el camino hacia un Perú próspero" (Instituto Peruano de Economía - IPE, dic. 2024):\n   https://ipe.org.pe/'
   },
   {
-    keys: ['afiliado', 'afiliaciones', 'comunidad', 'organizaciones', 'ipe', 'wapor', 'altum', 'oxford', 'miembro', 'red'],
+    keys: ['afiliado', 'afiliaciones', 'comunidad', 'organizaciones', 'ipe', 'wapor', 'oxford', 'miembro', 'red'],
     answer:
-      'Afiliaciones y membresías profesionales de David:\n\n• Instituto Peruano de Economía (IPE) — Embajador de la Red de Jóvenes Líderes (2024–Actualidad): https://ipe.org.pe/\n• Global Leaders Cohort (2024–Actualidad, Universidad de Oxford y Universidad de St. Gallen): https://www.leadership-challenge.org/past-glc-2024\n• In Altum — Becario y miembro de la comunidad de graduados (2023–Actualidad, The Catholic University of America): https://www.inaltumprogram.org/\n• WAPOR Latinoamérica — Miembro del capítulo regional (2024–2025): https://waporlatinoamerica.org/'
+      'Afiliaciones y membresías profesionales de David:\n\n• Instituto Peruano de Economía (IPE) — Embajador de la Red de Jóvenes Líderes (2024–Actualidad): https://ipe.org.pe/\n• Global Leaders Cohort (2024–Actualidad, Oxford, UK): https://www.leadership-challenge.org/past-glc-2024\n• WAPOR Latinoamérica — Miembro del capítulo regional (2024–2025): https://waporlatinoamerica.org/'
   },
   {
     keys: ['experiencia', 'trabajo', 'carrera', 'roles', 'beder', 'bullard', 'trayectoria', 'empleo'],

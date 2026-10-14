@@ -707,21 +707,11 @@ export const DAVID_DATA = {
       id: "aff-3",
       title: "Global Leaders Cohort",
       titleEs: "Global Leaders Cohort",
-      meta: "Oxford, UK & St. Gallen, Switzerland · 2024 – Present",
-      metaEs: "Oxford, Reino Unido y St. Gallen, Suiza · 2024 – Actualidad",
-      details: ["Selected for the Global Leaders Cohort by the Social Sciences Division at Oxford University and the University of St. Gallen."],
-      detailsEs: ["Seleccionado para el Global Leaders Cohort por la División de Ciencias Sociales de la Universidad de Oxford y la Universidad de St. Gallen."],
+      meta: "Oxford, UK · 2024 – Present",
+      metaEs: "Oxford, UK · 2024 – Actualidad",
+      details: ["Selected for the Global Leaders Cohort by the Social Sciences Division at Oxford University."],
+      detailsEs: ["Seleccionado para el Global Leaders Cohort por la División de Ciencias Sociales de la Universidad de Oxford."],
       url: "https://www.leadership-challenge.org/past-glc-2024"
-    },
-    {
-      id: "aff-4",
-      title: "In Altum",
-      titleEs: "In Altum",
-      meta: "Washington, D.C., United States · 2023 – Present",
-      metaEs: "Washington, D.C., Estados Unidos · 2023 – Actualidad",
-      details: ["Fellow and member of the In Altum program alumni community, The Busch School of Business, The Catholic University of America."],
-      detailsEs: ["Becario y miembro de la comunidad de graduados del programa In Altum, The Busch School of Business, The Catholic University of America."],
-      url: "https://www.inaltumprogram.org/"
     }
   ] as AffiliationItem[],
 
