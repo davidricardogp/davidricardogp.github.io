@@ -17,12 +17,12 @@ export const EngravingPlate: React.FC<EngravingPlateProps> = ({ currentLang, onO
       aria-labelledby="engraving-plate-caption"
     >
       {/* Plate Header Label */}
-      <div className="flex items-center justify-between text-xs font-mono text-[var(--ink-3)]">
-        <span className="uppercase tracking-widest text-[var(--signal)] font-semibold flex items-center gap-1.5">
-          <BookOpen className="h-3.5 w-3.5" />
+      <div className="flex items-center justify-between text-xs font-mono text-[var(--ink-3)] flex-wrap gap-y-1">
+        <span className="uppercase tracking-widest text-[var(--signal)] font-semibold flex items-center gap-1.5 text-[10.5px] sm:text-xs">
+          <BookOpen className="h-3.5 w-3.5 shrink-0" />
           <span>{currentLang === 'en' ? 'Plate XII · Academic Ex Libris' : 'Lámina XII · Ex Libris Académico'}</span>
         </span>
-        <span className="text-[11px]">
+        <span className="text-[10px] sm:text-[11px]">
           {artwork.year} &middot; {currentLang === 'en' ? 'Paris, Hachette' : 'París, Hachette'}
         </span>
       </div>

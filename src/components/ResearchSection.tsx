@@ -38,10 +38,10 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
             {DAVID_DATA.workingPapers.map((paper) => (
               <article
                 key={paper.id}
-                className="group p-3 -mx-3 rounded transition-colors hover:bg-[var(--paper-sunk)] space-y-1.5 text-[17px] font-prose leading-relaxed cursor-pointer"
+                className="group p-2.5 sm:p-3 -mx-1.5 sm:-mx-3 rounded transition-colors hover:bg-[var(--paper-sunk)] space-y-1.5 text-[16px] sm:text-[17px] font-prose leading-relaxed cursor-pointer"
                 onClick={() => handleOpenPaper(paper)}
               >
-                <div className="font-semibold text-[18px]">
+                <div className="font-semibold text-[17px] sm:text-[18px] leading-snug">
                   <span className="academic-link inline-flex items-baseline gap-1 group-hover:text-[var(--signal)]">
                     <span>{paper.title}</span>
                     <Info className="h-3.5 w-3.5 text-[var(--signal)] opacity-80 shrink-0 self-center" />
@@ -79,16 +79,16 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
             {DAVID_DATA.books.map((book) => (
               <article
                 key={book.id}
-                className="group p-3 -mx-3 rounded transition-colors hover:bg-[var(--paper-sunk)] space-y-1.5 text-[17px] font-prose leading-relaxed cursor-pointer"
+                className="group p-2.5 sm:p-3 -mx-1.5 sm:-mx-3 rounded transition-colors hover:bg-[var(--paper-sunk)] space-y-1.5 text-[16px] sm:text-[17px] font-prose leading-relaxed cursor-pointer"
                 onClick={() => handleOpenPaper(book)}
               >
-                <div className="font-semibold text-[18px]">
+                <div className="font-semibold text-[17px] sm:text-[18px] leading-snug">
                   <span className="academic-link inline-flex items-baseline gap-1 group-hover:text-[var(--signal)]">
                     <span>{book.title}</span>
                     <Info className="h-3.5 w-3.5 text-[var(--signal)] opacity-80 shrink-0 self-center" />
                   </span>
                 </div>
-                <div className="text-xs font-label text-[var(--ink-3)] font-mono flex flex-wrap items-center gap-3">
+                <div className="text-xs font-label text-[var(--ink-3)] font-mono flex flex-wrap items-center gap-x-3 gap-y-1">
                   <span>{book.meta}</span>
                   {book.githubUrl && (
                     <span
@@ -120,16 +120,16 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
             {DAVID_DATA.policyReports.map((report) => (
               <article
                 key={report.id}
-                className="group p-3 -mx-3 rounded transition-colors hover:bg-[var(--paper-sunk)] space-y-1.5 text-[17px] font-prose leading-relaxed cursor-pointer"
+                className="group p-2.5 sm:p-3 -mx-1.5 sm:-mx-3 rounded transition-colors hover:bg-[var(--paper-sunk)] space-y-1.5 text-[16px] sm:text-[17px] font-prose leading-relaxed cursor-pointer"
                 onClick={() => handleOpenPaper(report)}
               >
-                <div className="font-semibold text-[18px]">
+                <div className="font-semibold text-[17px] sm:text-[18px] leading-snug">
                   <span className="academic-link inline-flex items-baseline gap-1 group-hover:text-[var(--signal)]">
                     <span>{report.title}</span>
                     <Info className="h-3.5 w-3.5 text-[var(--signal)] opacity-80 shrink-0 self-center" />
                   </span>
                 </div>
-                <div className="text-xs font-label text-[var(--ink-3)] font-mono flex flex-wrap items-center gap-3">
+                <div className="text-xs font-label text-[var(--ink-3)] font-mono flex flex-wrap items-center gap-x-3 gap-y-1">
                   <span>{report.meta}</span>
                   {report.githubUrl && (
                     <span

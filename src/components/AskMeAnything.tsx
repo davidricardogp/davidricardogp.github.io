@@ -227,8 +227,8 @@ export const AskMeAnything: React.FC<AskMeAnythingProps> = ({ currentLang }) => 
       sender: 'bot',
       text:
         currentLang === 'en'
-          ? 'Hello! Ask about David Ricardo’s research topics (institutional entrepreneurship & AI entrepreneurship), working papers, books, code repositories, affiliations, or background.'
-          : '¡Hola! Pregunta sobre los temas de investigación de David Ricardo (institutional entrepreneurship y AI entrepreneurship), working papers, libros, repositorios de código, afiliaciones o trayectoria.'
+          ? 'Hello! Ask about David Ricardo’s research topics, working papers, books, code repositories, affiliations, or background.'
+          : '¡Hola! Pregunta sobre los temas de investigación de David Ricardo, working papers, libros, repositorios de código, afiliaciones o trayectoria.'
     }
   ]);
   const [inputVal, setInputVal] = useState('');
@@ -243,8 +243,8 @@ export const AskMeAnything: React.FC<AskMeAnythingProps> = ({ currentLang }) => 
             sender: 'bot',
             text:
               currentLang === 'en'
-                ? 'Hello! Ask about David Ricardo’s research topics (institutional entrepreneurship & AI entrepreneurship), working papers, books, code repositories, affiliations, or background.'
-                : '¡Hola! Pregunta sobre los temas de investigación de David Ricardo (institutional entrepreneurship y AI entrepreneurship), working papers, libros, repositorios de código, afiliaciones o trayectoria.'
+                ? 'Hello! Ask about David Ricardo’s research topics, working papers, books, code repositories, affiliations, or background.'
+                : '¡Hola! Pregunta sobre los temas de investigación de David Ricardo, working papers, libros, repositorios de código, afiliaciones o trayectoria.'
           }
         ];
       }
@@ -359,9 +359,9 @@ export const AskMeAnything: React.FC<AskMeAnythingProps> = ({ currentLang }) => 
 
     // Clean Fallback when query is beyond knowledge base (no email displayed)
     if (currentLang === 'en') {
-      return `I don't have that specific record on this page, as I only answer from verified academic information about David Ricardo recorded on this website.\n\nYou can ask about his research topics (institutional entrepreneurship & AI entrepreneurship), working papers, monograph, GitHub repositories, LinkedIn, or academic affiliations.`;
+      return `I don't have that specific record on this page, as I only answer from verified academic information about David Ricardo recorded on this website.\n\nYou can ask about his research topics, working papers, monograph, GitHub repositories, LinkedIn, or academic affiliations.`;
     }
-    return `No dispongo de esa información específica en esta página, ya que solo respondo a partir de datos académicos verificados sobre David Ricardo registrados en este sitio web.\n\nPuedes preguntarme sobre sus temas de investigación (institutional entrepreneurship y AI entrepreneurship), working papers, monografía, repositorios de GitHub, LinkedIn o afiliaciones académicas.`;
+    return `No dispongo de esa información específica en esta página, ya que solo respondo a partir de datos académicos verificados sobre David Ricardo registrados en este sitio web.\n\nPuedes preguntarme sobre sus temas de investigación, working papers, monografía, repositorios de GitHub, LinkedIn o afiliaciones académicas.`;
   };
 
   const handleAsk = (question: string) => {

@@ -17,32 +17,32 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose, currentLang }
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-xs overflow-y-auto animate-in fade-in duration-150 no-print"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 bg-black/60 backdrop-blur-xs overflow-y-auto animate-in fade-in duration-150 no-print"
       onClick={onClose}
     >
       <div
-        className="w-full max-w-3xl my-6 rounded-xl bg-[var(--paper)] border border-[var(--rule)] shadow-2xl p-6 sm:p-10 relative text-[var(--ink)] max-h-[90vh] overflow-y-auto"
+        className="w-full max-w-3xl my-3 sm:my-6 rounded-xl bg-[var(--paper)] border border-[var(--rule)] shadow-2xl p-4 sm:p-8 md:p-10 relative text-[var(--ink)] max-h-[92vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Top Actions */}
-        <div className="flex items-center justify-between pb-4 mb-6 border-b border-[var(--rule)]">
-          <div className="text-xs font-mono text-[var(--ink-3)] uppercase tracking-wider">
-            Curriculum Vitae · {DAVID_DATA.name}
+        <div className="flex items-center justify-between pb-3 sm:pb-4 mb-4 sm:mb-6 border-b border-[var(--rule)] gap-2">
+          <div className="text-[11px] sm:text-xs font-mono text-[var(--ink-3)] uppercase tracking-wider truncate max-w-[140px] sm:max-w-none">
+            Curriculum Vitae
           </div>
           <div className="flex items-center gap-2">
             <button
               onClick={handlePrint}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-label font-medium rounded border border-[var(--rule)] hover:bg-[var(--paper-sunk)] transition-colors cursor-pointer text-[var(--ink)]"
+              className="flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 text-[11px] sm:text-xs font-label font-medium rounded border border-[var(--rule)] hover:bg-[var(--paper-sunk)] transition-colors cursor-pointer text-[var(--ink)]"
             >
-              <Printer className="h-3.5 w-3.5" />
-              <span>{currentLang === 'en' ? 'Print / Save PDF' : 'Imprimir / Guardar PDF'}</span>
+              <Printer className="h-3.5 w-3.5 shrink-0" />
+              <span>{currentLang === 'en' ? 'Print / PDF' : 'Imprimir / PDF'}</span>
             </button>
             <button
               onClick={onClose}
-              className="p-1.5 rounded text-[var(--ink-3)] hover:text-[var(--ink)] hover:bg-[var(--paper-sunk)] transition-colors cursor-pointer"
+              className="p-1 sm:p-1.5 rounded text-[var(--ink-3)] hover:text-[var(--ink)] hover:bg-[var(--paper-sunk)] transition-colors cursor-pointer"
               aria-label={currentLang === 'en' ? 'Close CV modal' : 'Cerrar ventana de CV'}
             >
-              <X className="h-5 w-5" />
+              <X className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
           </div>
         </div>

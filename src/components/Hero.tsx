@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
 
   return (
     <header
-      className="min-h-[calc(100vh-3.5rem)] flex flex-col justify-between py-10 md:py-16 border-b border-[var(--rule)]"
+      className="min-h-auto md:min-h-[calc(100vh-3.5rem)] flex flex-col justify-between py-6 sm:py-10 md:py-16 border-b border-[var(--rule)]"
       id="intro"
     >
       {/* Top / Main Hero Content */}
@@ -33,14 +33,14 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
         />
 
         {/* Eyebrow */}
-        <p className="eyebrow mb-6 mt-10">
+        <p className="eyebrow mb-4 sm:mb-6 mt-6 sm:mt-10 text-[10.5px] sm:text-[11px] leading-relaxed">
           <span>{currentLang === 'en' ? DAVID_DATA.affiliation : DAVID_DATA.affiliationEs}</span>
           <span className="eyebrow-sep" aria-hidden="true">/</span>
           <span>{currentLang === 'en' ? DAVID_DATA.department : DAVID_DATA.departmentEs}</span>
         </p>
 
         {/* BIO heading */}
-        <h1 className="sec-h mb-6">
+        <h1 className="sec-h mb-4 sm:mb-6 text-xl sm:text-2xl">
           <span className="n">00</span>
           <span>BIO</span>
         </h1>
@@ -115,7 +115,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
         </div>
 
         {/* Utility links row: Curriculum Vitae, ORCID, LinkedIn, Google Scholar, GitHub (No email in BIO) */}
-        <div className="utility">
+        <div className="utility flex flex-wrap gap-x-3.5 sm:gap-x-5 gap-y-2 text-[13.5px] sm:text-[15px]">
           <button
             type="button"
             onClick={onOpenCvModal}
@@ -159,7 +159,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
         </div>
 
         {/* Contact Details placed directly beneath curriculum & utility links — Clean editorial style without a box ("sin caja") and without repeating GitHub, LinkedIn, Google Scholar */}
-        <div id="contact" className="mt-12 pt-8 border-t border-[var(--rule)]">
+        <div id="contact" className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-[var(--rule)]">
           <h2 className="text-xs font-mono font-semibold tracking-wider uppercase text-[var(--ink)] mb-4">
             {currentLang === 'en' ? 'Contact' : 'Contacto'}
           </h2>
@@ -192,7 +192,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
                 <span className="text-[var(--ink-3)]">Email:</span>
                 <a
                   href={`mailto:${DAVID_DATA.contact.email}`}
-                  className="academic-link text-[var(--ink)] hover:text-[var(--signal)] font-semibold"
+                  className="academic-link text-[var(--ink)] hover:text-[var(--signal)] font-semibold break-all"
                 >
                   {DAVID_DATA.contact.email}
                 </a>
@@ -219,7 +219,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
               </div>
 
               {/* Tel */}
-              <p>
+              <p className="break-words">
                 <span className="text-[var(--ink-3)]">Tel: </span>
                 <a
                   href={`tel:${DAVID_DATA.contact.tel.replace(/\s+/g, '')}`}
@@ -233,14 +233,17 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
         </div>
       </div>
 
-      {/* Screen bottom subtle cue matching Louis Zhu: Scroll, or press 1–6 */}
-      <div className="pt-8">
+      {/* Screen bottom subtle cue matching Louis Zhu */}
+      <div className="pt-6 sm:pt-8">
         <a
           href="#research"
-          className="group inline-flex items-center gap-2.5 text-xs font-mono tracking-widest uppercase text-[var(--ink-3)] hover:text-[var(--signal)] transition-colors"
+          className="group inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[var(--ink-3)] hover:text-[var(--signal)] transition-colors"
         >
-          <span>{currentLang === 'en' ? 'Scroll, or press 1–6' : 'Desplázate, o presiona 1–6'}</span>
-          <span className="flex items-center gap-1 text-[10px] text-[var(--ink-3)]">
+          <span>{currentLang === 'en' ? 'Scroll down' : 'Desplázate'}</span>
+          <span className="hidden sm:inline">
+            {currentLang === 'en' ? ', or press 1–6' : ', o presiona 1–6'}
+          </span>
+          <span className="hidden sm:inline-flex items-center gap-1 text-[10px] text-[var(--ink-3)]">
             <kbd className="px-1.5 py-0.5 rounded bg-[var(--paper-sunk)] border border-[var(--rule)] font-mono text-[10px] text-[var(--ink-2)] shadow-xs">1</kbd>
             <span>–</span>
             <kbd className="px-1.5 py-0.5 rounded bg-[var(--paper-sunk)] border border-[var(--rule)] font-mono text-[10px] text-[var(--ink-2)] shadow-xs">6</kbd>

@@ -50,14 +50,14 @@ export const PaperModal: React.FC<PaperModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/60 backdrop-blur-xs"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-5 bg-black/60 backdrop-blur-xs"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="paper-modal-title"
     >
       <div
-        className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-[var(--paper)] border border-[var(--rule-strong)] shadow-2xl rounded-sm p-6 sm:p-8"
+        className="relative w-full max-w-2xl max-h-[92vh] overflow-y-auto bg-[var(--paper)] border border-[var(--rule-strong)] shadow-2xl rounded-sm p-4 sm:p-8"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
@@ -65,23 +65,23 @@ export const PaperModal: React.FC<PaperModalProps> = ({
           onClick={onClose}
           type="button"
           aria-label={currentLang === 'en' ? 'Close dialog' : 'Cerrar diálogo'}
-          className="absolute top-5 right-5 p-1.5 text-[var(--ink-3)] hover:text-[var(--ink)] hover:bg-[var(--paper-sunk)] transition-colors rounded cursor-pointer"
+          className="absolute top-4 right-4 sm:top-5 sm:right-5 p-1.5 text-[var(--ink-3)] hover:text-[var(--ink)] hover:bg-[var(--paper-sunk)] transition-colors rounded cursor-pointer"
         >
-          <X className="h-5 w-5" />
+          <X className="h-4 w-4 sm:h-5 sm:w-5" />
         </button>
 
         {/* Modal Header */}
-        <div className="space-y-3 pb-5 border-b border-[var(--rule)] pr-8">
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-[11px] uppercase tracking-wider px-2 py-0.5 rounded bg-[var(--paper-sunk)] border border-[var(--rule)] text-[var(--ink-2)]">
+        <div className="space-y-2.5 sm:space-y-3 pb-4 sm:pb-5 border-b border-[var(--rule)] pr-8">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-wider px-2 py-0.5 rounded bg-[var(--paper-sunk)] border border-[var(--rule)] text-[var(--ink-2)]">
               {badgeText}
             </span>
-            <span className="text-xs font-mono text-[var(--ink-3)]">
+            <span className="text-[11px] sm:text-xs font-mono text-[var(--ink-3)]">
               {paper.meta}
             </span>
           </div>
 
-          <h2 id="paper-modal-title" className="text-xl sm:text-2xl font-serif font-bold text-[var(--ink)] leading-snug">
+          <h2 id="paper-modal-title" className="text-lg sm:text-2xl font-serif font-bold text-[var(--ink)] leading-snug">
             {paper.title}
           </h2>
 
