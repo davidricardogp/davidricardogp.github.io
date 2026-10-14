@@ -1,0 +1,568 @@
+@import "tailwindcss";
+
+:root {
+  /* Surfaces: Pure Crisp White (No cream, no yellow tint) */
+  --paper: #FFFFFF;
+  --paper-sunk: #F7F7F8;
+  --paper-raised: #FFFFFF;
+  
+  /* Inks: Pure Crisp Monochrome */
+  --ink: #111111;
+  --ink-2: #444444;
+  --ink-3: #71717A;
+  
+  /* Rules: Subtle Crisp Neutral Grays */
+  --rule: #E5E7EB;
+  --rule-strong: #D1D5DB;
+  
+  /* Signal / Accent: Pure Black & Charcoal Monochrome */
+  --signal: #111111;
+  --signal-lift: #000000;
+  --signal-wash: rgba(0, 0, 0, 0.06);
+  
+  /* Fonts matching Louis Yiven Zhu */
+  --font-prose: "Spectral", Charter, "Iowan Old Style", Georgia, serif;
+  --font-label: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+
+.dark {
+  --paper: #0F1012;
+  --paper-sunk: #18191C;
+  --paper-raised: #202226;
+  
+  --ink: #F4F4F5;
+  --ink-2: #D4D4D8;
+  --ink-3: #A1A1AA;
+  
+  --rule: #27272A;
+  --rule-strong: #3F3F46;
+  
+  --signal: #FFFFFF;
+  --signal-lift: #F4F4F5;
+  --signal-wash: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-prose);
+  font-size: 19px;
+  line-height: 1.68;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-prose {
+  font-family: var(--font-prose);
+}
+
+.font-label {
+  font-family: var(--font-label);
+}
+
+.font-data {
+  font-family: var(--font-data);
+}
+
+/* Louis Zhu Section Headings:
+   h1.sec-h & h2 section headers with .n number prefix and a trailing rule line across
+*/
+.sec-h,
+h2.sec-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-family: var(--font-label);
+  font-size: 24px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+  text-transform: none;
+}
+
+.sec-h::after,
+h2.sec-heading::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* Numbered section badge matching Louis Zhu: <span class="n">01</span> */
+.sec-n,
+.n {
+  font-family: var(--font-data);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--signal);
+  margin-right: 0.2rem;
+}
+
+/* Clean text links matching Louis Zhu */
+.academic-link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 3px;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+.academic-link:hover {
+  color: var(--signal);
+  text-decoration-color: var(--signal);
+}
+
+/* Signal accent link */
+.signal-link {
+  color: var(--signal);
+  text-decoration: underline;
+  text-decoration-color: var(--signal-wash);
+  text-underline-offset: 3px;
+  transition: all 150ms ease;
+}
+
+.signal-link:hover {
+  color: var(--signal-lift);
+  text-decoration-color: var(--signal);
+}
+
+/* Eyebrow kicker */
+.eyebrow {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--signal);
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.eyebrow-sep {
+  color: var(--rule-strong);
+}
+
+/* Subheadings */
+.sub-h {
+  font-family: var(--font-data);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* Hero Section Typography & Rhythm matching Louis Zhu */
+.hero {
+  padding-top: 0.5rem;
+  max-width: 44rem;
+}
+
+.lede {
+  font-family: var(--font-prose);
+  font-size: 21px;
+  line-height: 34px;
+  max-width: 42rem;
+  margin-bottom: 15px;
+  color: var(--ink);
+}
+
+.lede em {
+  color: var(--signal);
+  font-style: italic;
+}
+
+.hero-more {
+  font-family: var(--font-prose);
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--ink-2);
+  max-width: 42rem;
+  margin: 0 0 16px;
+}
+
+.hero-more a {
+  text-decoration-color: var(--rule-strong);
+}
+
+.hero-more a:hover {
+  text-decoration-color: var(--signal);
+}
+
+.hero-more em {
+  color: var(--signal);
+  font-style: italic;
+}
+
+/* Offdesk quiet mono tags */
+.offdesk {
+  display: flex;
+  gap: 7.5px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.offdesk span {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 4px 9px;
+  background: var(--paper-sunk);
+}
+
+/* Utility link row */
+.utility {
+  display: flex;
+  gap: 1.4rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-family: var(--font-label);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 22px;
+}
+
+.utility a,
+.utility button {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--signal);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3.5px;
+  transition: color 140ms ease, text-decoration-color 140ms ease;
+}
+
+.utility a:hover,
+.utility button:hover {
+  text-decoration-thickness: 2px;
+  color: var(--signal-lift);
+}
+
+/* External link indicator matching Louis Zhu */
+.ext {
+  margin-right: 0.35em;
+}
+
+.ext::after {
+  content: "";
+  display: inline-block;
+  width: 0.36em;
+  height: 0.36em;
+  margin-left: 0.3em;
+  border-top: 1px solid var(--ink-3);
+  border-right: 1px solid var(--ink-3);
+  transform: rotate(45deg);
+  vertical-align: 0.15em;
+  opacity: 0.7;
+}
+
+/* Fact tiles grid matching Louis Zhu */
+.facts {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fact {
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 15px;
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  background: var(--paper-raised);
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+.fact:hover {
+  border-color: var(--rule-strong);
+  transform: translateY(-2px);
+}
+
+.fact .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--signal);
+}
+
+.fact-k {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.fact-v {
+  font-family: var(--font-label);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+/* Contact cards matching Louis Zhu */
+.email-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.email-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  padding: 11px 18px;
+  font-family: var(--font-label);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.email-card:hover {
+  border-color: var(--signal);
+  color: var(--signal);
+  transform: translateY(-1px);
+}
+
+.email-card.primary {
+  color: var(--paper);
+  background: var(--signal);
+  border-color: var(--signal);
+}
+
+.email-card.primary:hover {
+  color: var(--paper);
+  background: var(--signal-lift);
+  border-color: var(--signal-lift);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rule-strong);
+  border-radius: 3px;
+}
+
+/* Ask me anything chat styles matching louisyzhu.github.io */
+.chat {
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  background: var(--paper-raised);
+}
+.chat-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-sunk);
+}
+.chat-head strong {
+  font-family: var(--font-label);
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--ink);
+}
+.chat-state {
+  font-family: var(--font-data);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-transform: uppercase;
+}
+.chat-state i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--signal);
+  box-shadow: 0 0 0 3px var(--signal-wash);
+}
+.chat-log {
+  max-height: 340px;
+  overflow-y: auto;
+  padding: 18px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.msg {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+.msg-tag {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 50%;
+  background: var(--paper);
+  font-family: var(--font-data);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.msg.is-bot .msg-tag {
+  color: var(--signal);
+  border-color: var(--signal);
+}
+.msg-body {
+  width: fit-content;
+  max-width: 90%;
+  padding: 10px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 3px 12px 12px 12px;
+  background: var(--paper-sunk);
+  font-family: var(--font-prose);
+  font-size: 15.5px;
+  line-height: 1.55;
+  margin: 0;
+  color: var(--ink);
+}
+.msg.is-you {
+  grid-template-columns: minmax(0, 1fr) 28px;
+}
+.msg.is-you .msg-tag {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.msg.is-you .msg-body {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  color: var(--paper);
+  background: var(--signal);
+  border-color: var(--signal);
+  border-radius: 12px 3px 12px 12px;
+}
+.chat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 0 18px 14px 18px;
+}
+.chat-chips button {
+  font-family: var(--font-label);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink-2);
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.chat-chips button:hover {
+  border-color: var(--signal);
+  color: var(--signal);
+  background: var(--signal-wash);
+}
+.chat-bar {
+  display: flex;
+  gap: 8px;
+  margin: 0 18px 18px;
+  padding: 4px 4px 4px 12px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 6px;
+  background: var(--paper-raised);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.chat-bar:focus-within {
+  border-color: var(--signal);
+  box-shadow: 0 0 0 2px var(--signal-wash);
+}
+.chat-bar input {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-label);
+  font-size: 14px;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  padding: 7px 0;
+}
+.chat-bar input::placeholder {
+  color: var(--ink-3);
+}
+.chat-bar input:focus-visible {
+  outline: 0;
+}
+.chat-bar button {
+  padding: 7px 16px;
+  border: 1px solid var(--signal);
+  border-radius: 4px;
+  color: var(--paper);
+  background: var(--signal);
+  font-family: var(--font-label);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+.chat-bar button:hover {
+  background: var(--signal-lift);
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
