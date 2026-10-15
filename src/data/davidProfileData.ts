@@ -65,6 +65,17 @@ export interface AffiliationItem {
   url?: string;
 }
 
+export interface CongressItem {
+  id: string;
+  title: string;
+  titleEs: string;
+  session?: string;
+  sessionEs?: string;
+  meta: string;
+  metaEs: string;
+  url: string;
+}
+
 export interface AwardItem {
   id: string;
   title: string;
@@ -196,40 +207,40 @@ export const DAVID_DATA = {
     locationSummaryEs: "Departamento de Grabados y Fotografía, Biblioteca Nacional de Francia (BnF), París",
     locations: [
       {
-        institution: "Bibliothèque nationale de France (BnF)",
-        institutionEs: "Biblioteca Nacional de Francia (BnF)",
-        city: "Paris, France",
-        department: "Département des Estampes et de la photographie & Réserve des livres rares",
-        departmentEs: "Departamento de Grabados y Fotografía y Reserva de Libros Raros",
-        identifier: "Réserve Ye-15-Fol. (Dépôt légal 1861) · ARK bpt6k10499645",
-        url: "https://gallica.bnf.fr/ark:/12148/bpt6k10499645"
+        institution: "Columbia University — Digital Dante Project",
+        institutionEs: "Universidad de Columbia — Proyecto Digital Dante",
+        city: "New York, NY",
+        department: "Department of Italian & Rare Book Preservation",
+        departmentEs: "Departamento de Estudios Italianos y Preservación de Libros Raros",
+        identifier: "Inferno Canto IV: Master Doré Wood Engravings & Scholarly Commentary",
+        url: "https://digitaldante.columbia.edu/dante/divine-comedy/inferno/inferno-4/"
       },
       {
-        institution: "The British Museum",
-        institutionEs: "Museo Británico (The British Museum)",
-        city: "London, United Kingdom",
-        department: "Department of Prints and Drawings",
-        departmentEs: "Departamento de Grabados y Dibujos",
-        identifier: "Museum number 1878,0511.1278 (Plate XII)",
-        url: "https://www.britishmuseum.org/collection/object/P_1878-0511-1278"
+        institution: "Wikimedia Commons & GLAM Digital Archive",
+        institutionEs: "Wikimedia Commons y Archivo Digital GLAM",
+        city: "Online Repository",
+        department: "Public Domain Master Scans (3,000 × 2,400 px)",
+        departmentEs: "Escaneos Maestros en Dominio Público (3.000 × 2.400 px)",
+        identifier: "Gustave Doré - Dante Alighieri - Inferno - Plate 12 (Canto IV)",
+        url: "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_(Canto_IV_-_Limbo,_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets).jpg"
       },
       {
-        institution: "The Metropolitan Museum of Art (The Met)",
-        institutionEs: "Museo Metropolitano de Arte (The Met)",
-        city: "New York, NY, United States",
-        department: "Department of Drawings and Prints",
-        departmentEs: "Departamento de Dibujos y Grabados",
-        identifier: "Harris Brisbane Dick Fund, Accession 22.61.1",
-        url: "https://www.metmuseum.org/art/collection"
+        institution: "Internet Archive — Rare Books & Special Collections",
+        institutionEs: "Internet Archive — Libros Raros y Colecciones Especiales",
+        city: "Toronto, Canada",
+        department: "University of Toronto Digital Collection",
+        departmentEs: "Colección Digital de la Universidad de Toronto",
+        identifier: "Dante's Inferno with Illustrations by Gustave Doré (Folio Scan)",
+        url: "https://archive.org/details/dantesinferno00dantuoft"
       },
       {
-        institution: "Library of Congress",
-        institutionEs: "Biblioteca del Congreso de EE. UU.",
-        city: "Washington, D.C., United States",
-        department: "Rare Book and Special Collections Division",
-        departmentEs: "División de Libros Raros y Colecciones Especiales",
-        identifier: "Call Number: PQ4315.12 .D6 1861",
-        url: "https://www.loc.gov/"
+        institution: "Internet Archive — Master High-Definition Collection",
+        institutionEs: "Internet Archive — Colección de Ilustraciones en Alta Resolución",
+        city: "San Francisco, CA",
+        department: "Divine Comedy Preservation Archive",
+        departmentEs: "Archivo de Preservación de la Divina Comedia",
+        identifier: "Gustave Doré Illustrations for the Divine Comedy (Master Scan Archive)",
+        url: "https://archive.org/details/GustaveDoreIllustrationsForTheDivineComedyByDanteAlighieriHQ"
       }
     ],
     literaryPassage: {
@@ -314,7 +325,7 @@ export const DAVID_DATA = {
       type: "working-paper",
       badge: "Working Paper",
       badgeEs: "Documento de Trabajo",
-      origin: "This paper is a collaborative project with my father, Jorge Ricardo Gonzales Castillo Ph.D., who augmented the theoretical Ramsey-Cass-Koopmans growth model by incorporating entrepreneurship as an endogenous factor to examine its growth effects, and my uncle, Luis Varona Castillo Ph.D., who added institutional informality to the model. Both are researchers and professors at National Univesity of Piura. Together with me, we formulated this research question to investigate how institutional quality and governance moderate the entrepreneurship-growth relationship.",
+      origin: "This paper is a collaborative project with my father, Jorge Ricardo Gonzales Castillo Ph.D., who augmented the theoretical Ramsey-Cass-Koopmans growth model by incorporating entrepreneurship as an endogenous factor to examine its growth effects, and my uncle, Luis Varona Castillo Ph.D., who added institutional informality to the model. Both are researchers and professors at National University of Piura. Together with me, we formulated this research question to investigate how institutional quality and governance moderate the entrepreneurship-growth relationship.",
       originEs: "Este documento es un proyecto colaborativo con mi padre, el Dr. Jorge Ricardo Gonzales Castillo, quien amplió el modelo teórico de crecimiento de Ramsey-Cass-Koopmans incorporando el emprendimiento como un factor endógeno para examinar sus efectos en el crecimiento, y mi tío, el Dr. Luis Varona Castillo, quien añadió la informalidad institucional al modelo. Ambos son investigadores y profesores de la Universidad Nacional de Piura. Junto conmigo, formulamos esta pregunta de investigación para estudiar cómo la calidad institucional y la gobernanza moderan la relación entre emprendimiento y crecimiento.",
       summary: "This research examines the relationship between entrepreneurship and economic performance in Latin America and the Caribbean, and how this relationship is shaped by the institutional and productive environment of the region. The article employs an augmented Ramsey–Cass–Koopmans framework, where entrepreneurial knowledge acts as a Romer-style externality that boosts productive capacity, with formal business entry serving as a key component. The findings suggest that while formal business creation can lead to stronger economic performance, its economic significance should be understood within the broader productive and institutional context in which firms operate. Therefore, entrepreneurship is better viewed as one element of a wider development process rather than an independent or automatic driver of economic growth.",
       summaryEs: "Esta investigación examina la relación entre el emprendimiento y el desempeño económico en América Latina y el Caribe, y cómo dicha relación está condicionada por el entorno institucional y productivo de la región. El artículo emplea un marco ampliado de Ramsey–Cass–Koopmans, donde el conocimiento emprendedor actúa como una externalidad tipo Romer que incrementa la capacidad productiva, teniendo a la creación formal de empresas como un componente clave. Los hallazgos sugieren que, si bien la creación de empresas formales puede propiciar un mayor desempeño económico, su relevancia económica debe entenderse dentro del contexto productivo e institucional más amplio en el que operan las empresas. Por consiguiente, el emprendimiento se concibe mejor como un elemento dentro de un proceso integral de desarrollo más que como un motor independiente o automático del crecimiento económico.",
@@ -687,8 +698,8 @@ export const DAVID_DATA = {
       id: "aff-1",
       title: "WAPOR Latinoamérica",
       titleEs: "WAPOR Latinoamérica",
-      meta: "Latin America · 2024 – 2025",
-      metaEs: "Latinoamérica · 2024 – 2025",
+      meta: "Latin America · 2024 – Present",
+      metaEs: "Latinoamérica · 2024 – Actualidad",
       details: ["Member of the World Association for Public Opinion Research (WAPOR) Latin America Chapter."],
       detailsEs: ["Miembro del capítulo Latinoamérica de la World Association for Public Opinion Research (WAPOR)."],
       url: "https://waporlatinoamerica.org/"
@@ -705,15 +716,70 @@ export const DAVID_DATA = {
     },
     {
       id: "aff-3",
-      title: "Global Leaders Cohort",
-      titleEs: "Global Leaders Cohort",
+      title: "Global Leaders Cohort 2024",
+      titleEs: "Global Leaders Cohort 2024",
       meta: "Oxford, UK · 2024 – Present",
       metaEs: "Oxford, UK · 2024 – Actualidad",
-      details: ["Selected for the Global Leaders Cohort by the Social Sciences Division at Oxford University."],
-      detailsEs: ["Seleccionado para el Global Leaders Cohort por la División de Ciencias Sociales de la Universidad de Oxford."],
-      url: "https://www.leadership-challenge.org/past-glc-2024"
+      details: ["Member of the Global Leaders Cohort organized by Oxford University and University of St. Gallen."],
+      detailsEs: ["Miembro del Global Leaders Cohort organizado por la Universidad de Oxford y la Universidad de St. Gallen."],
+      url: "https://www.leadership-challenge.org/about-glc"
     }
   ] as AffiliationItem[],
+
+  congresses: [
+    {
+      id: "cong-1",
+      title: "GitHub Universe 2026",
+      titleEs: "GitHub Universe 2026",
+      meta: "Online · Oct. 28 – 29, 2026",
+      metaEs: "Online · 28 – 29 de octubre de 2026",
+      url: "https://githubuniverse.com/"
+    },
+    {
+      id: "cong-2",
+      title: "Mobile World Congress 2026",
+      titleEs: "Mobile World Congress 2026",
+      session: "Session: The Sovereignty Frontier: Scaling Europe’s Strategic Tech by Josemaria Siota",
+      sessionEs: "Sesión: The Sovereignty Frontier: Scaling Europe’s Strategic Tech by Josemaria Siota",
+      meta: "Barcelona, Spain · Mar. 3, 2026",
+      metaEs: "Barcelona, España · 3 de marzo de 2026",
+      url: "https://www.mwcbarcelona.com/agenda/sessions/5845-the-sovereignty-frontier-scaling-europes-strategic-tech"
+    },
+    {
+      id: "cong-3",
+      title: "TEDxIESE 2026",
+      titleEs: "TEDxIESE 2026",
+      session: "Session: Do successful companies quietly kill innovation? by Josemaria Siota",
+      sessionEs: "Sesión: Do successful companies quietly kill innovation? by Josemaria Siota",
+      meta: "Barcelona, Spain · Feb. 6, 2026",
+      metaEs: "Barcelona, España · 6 de febrero de 2026",
+      url: "https://www.tedxiese.com/"
+    },
+    {
+      id: "cong-4",
+      title: "Hangar 51 Accelerator 2024",
+      titleEs: "Hangar 51 Accelerator 2024",
+      meta: "London, United Kingdom · Nov. 27, 2024",
+      metaEs: "Londres, Reino Unido · 27 de noviembre de 2024",
+      url: "https://www.iaginnovation.com/hangar-51/"
+    },
+    {
+      id: "cong-5",
+      title: "Slush 2024",
+      titleEs: "Slush 2024",
+      meta: "Helsinki, Finland · Nov. 20 – 21, 2024",
+      metaEs: "Helsinki, Finlandia · 20 – 21 de noviembre de 2024",
+      url: "https://slush.org/"
+    },
+    {
+      id: "cong-6",
+      title: "4YFN Barcelona 2024",
+      titleEs: "4YFN Barcelona 2024",
+      meta: "Barcelona, Spain · Feb. 26 – 29, 2024",
+      metaEs: "Barcelona, España · 26 – 29 de febrero de 2024",
+      url: "https://www.4yfn.com/"
+    }
+  ] as CongressItem[],
 
   awards: [
     {
@@ -737,7 +803,7 @@ export const DAVID_DATA = {
       titleEs: "Global Leaders Cohort 2024",
       description: "Selected among the top 1.82% of candidates by the Social Sciences Division at Oxford University and the University of St. Gallen.",
       descriptionEs: "Seleccionado entre el 1,82% superior de candidatos por la División de Ciencias Sociales de la Universidad de Oxford y la Universidad de St. Gallen.",
-      url: "https://www.leadership-challenge.org/past-glc-2024"
+      url: "https://www.leadership-challenge.org/about-glc"
     },
     {
       id: "aw-4",

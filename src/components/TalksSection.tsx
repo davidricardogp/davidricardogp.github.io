@@ -141,7 +141,7 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
                 rel="noopener noreferrer"
                 className="academic-link"
               >
-                PAD - School of Management
+                {currentLang === 'en' ? 'PAD - School of Management' : 'PAD - Escuela de Dirección'}
               </a>{' '}
               · {currentLang === 'en' ? 'Lima, Peru · Aug. 22, 2025' : 'Lima, Perú · 22 Ago. 2025'}
             </div>
@@ -155,7 +155,7 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
                 rel="noopener noreferrer"
                 className="academic-link"
               >
-                PAD - School of Management
+                {currentLang === 'en' ? 'PAD - School of Management' : 'PAD - Escuela de Dirección'}
               </a>{' '}
               {currentLang === 'en' ? 'and' : 'y'}{' '}
               <a
@@ -226,6 +226,38 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
           </article>
         </div>
 
+        {/* Congress / Congresos */}
+        <div className="pt-8 border-t border-[var(--rule)] space-y-6">
+          <h3 className="font-label text-xs uppercase tracking-wider text-[var(--ink-3)] font-mono">
+            {currentLang === 'en' ? 'Congress' : 'Congresos'}
+          </h3>
+          <div className="space-y-6">
+            {DAVID_DATA.congresses.map((cong) => (
+              <article key={cong.id} className="space-y-1 text-[17px] font-prose leading-relaxed">
+                <div className="font-semibold text-[18px]">
+                  <a
+                    href={cong.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="academic-link inline-flex items-baseline gap-1"
+                  >
+                    <span>{currentLang === 'en' ? cong.title : cong.titleEs}</span>
+                    <ExternalLink className="h-3 w-3 opacity-60 shrink-0 self-center" />
+                  </a>
+                </div>
+                <div className="text-xs font-label text-[var(--ink-3)] font-mono">
+                  {currentLang === 'en' ? cong.meta : cong.metaEs}
+                </div>
+                {(cong.session || cong.sessionEs) && (
+                  <p className="text-[15px] text-[var(--ink-2)] font-prose pt-0.5">
+                    {currentLang === 'en' ? cong.session : cong.sessionEs}
+                  </p>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+
         {/* Community & Professional Affiliations (formatted exactly like complementary education) */}
         <div className="pt-8 border-t border-[var(--rule)] space-y-6">
           <h3 className="font-label text-xs uppercase tracking-wider text-[var(--ink-3)] font-mono">
@@ -252,14 +284,16 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
                 <div className="text-xs font-label text-[var(--ink-3)] font-mono">
                   {currentLang === 'en' ? aff.meta : aff.metaEs}
                 </div>
-                <ul className="text-sm font-prose text-[var(--ink-2)] space-y-0.5 pt-0.5">
-                  {(currentLang === 'en' ? aff.details : aff.detailsEs).map((detail, idx) => (
-                    <li key={idx} className="relative pl-4">
-                      <span className="absolute left-0 top-[0.68em] -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[var(--ink-3)]" />
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
+                {(currentLang === 'en' ? aff.details : aff.detailsEs).length > 0 && (
+                  <ul className="text-sm font-prose text-[var(--ink-2)] space-y-0.5 pt-0.5">
+                    {(currentLang === 'en' ? aff.details : aff.detailsEs).map((detail, idx) => (
+                      <li key={idx} className="relative pl-4">
+                        <span className="absolute left-0 top-[0.68em] -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[var(--ink-3)]" />
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>

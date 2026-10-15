@@ -103,7 +103,7 @@ export default function App() {
       />
 
       {/* Main Container on 42rem / max-w-3xl rhythm */}
-      <main className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-4">
+      <main className="w-full max-w-3xl mx-auto px-4 sm:px-6 md:px-8 py-4 md:py-6">
         {/* 00 Who am I + contact info directly beneath utility links + Doré Engraving */}
         <Hero
           currentLang={currentLang}

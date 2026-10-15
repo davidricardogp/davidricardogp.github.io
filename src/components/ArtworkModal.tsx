@@ -11,8 +11,8 @@ interface ArtworkModalProps {
 }
 
 export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, currentLang }) => {
-  const [activeTab, setActiveTab] = useState<'view' | 'citation' | 'context' | 'archives'>('view');
-  const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<'view' | 'archives' | 'context'>('view');
+  const [copiedApa, setCopiedApa] = useState(false);
   const [useFullRes, setUseFullRes] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1);
 
@@ -34,15 +34,15 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
 
   if (!isOpen) return null;
 
-  const handleCopy = (text: string, format: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedFormat(format);
-    setTimeout(() => setCopiedFormat(null), 2500);
+  const handleCopyApa = () => {
+    navigator.clipboard.writeText(artwork.citations.apa);
+    setCopiedApa(true);
+    setTimeout(() => setCopiedApa(false), 2500);
   };
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-6 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -53,8 +53,8 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex items-start justify-between p-4 sm:p-5 border-b border-[var(--rule)] bg-[var(--paper-2)]">
-          <div className="pr-6">
+        <div className="flex items-start justify-between p-3.5 sm:p-5 border-b border-[var(--rule)] bg-[var(--paper-2)]">
+          <div className="pr-4 sm:pr-6">
             <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[var(--signal)] font-medium mb-1">
               <span>{currentLang === 'en' ? artwork.plate : artwork.plateEs}</span>
               <span>&middot;</span>
@@ -71,19 +71,19 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded text-[var(--ink-3)] hover:text-[var(--ink)] hover:bg-[var(--rule)] transition-colors cursor-pointer"
+            className="p-1.5 rounded text-[var(--ink-3)] hover:text-[var(--ink)] hover:bg-[var(--rule)] transition-colors cursor-pointer shrink-0"
             aria-label={currentLang === 'en' ? 'Close modal' : 'Cerrar modal'}
           >
             <X className="h-5 w-5" />
           </button>
         </div>
 
-        {/* Navigation Tabs */}
-        <div className="flex border-b border-[var(--rule)] px-4 bg-[var(--paper)] text-xs font-mono">
+        {/* Navigation Tabs — Only Engraving Inspection, Archival Repositories, Literary Context */}
+        <div className="flex border-b border-[var(--rule)] px-3 sm:px-4 bg-[var(--paper)] text-xs font-mono overflow-x-auto">
           <button
             type="button"
             onClick={() => setActiveTab('view')}
-            className={`py-2.5 px-3 border-b-2 font-medium transition-colors cursor-pointer ${
+            className={`py-2.5 px-3 border-b-2 font-medium transition-colors cursor-pointer whitespace-nowrap ${
               activeTab === 'view'
                 ? 'border-[var(--signal)] text-[var(--signal)] font-semibold'
                 : 'border-transparent text-[var(--ink-2)] hover:text-[var(--ink)]'
@@ -94,29 +94,18 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
           <button
             type="button"
             onClick={() => setActiveTab('archives')}
-            className={`py-2.5 px-3 border-b-2 font-medium transition-colors cursor-pointer ${
+            className={`py-2.5 px-3 border-b-2 font-medium transition-colors cursor-pointer whitespace-nowrap ${
               activeTab === 'archives'
                 ? 'border-[var(--signal)] text-[var(--signal)] font-semibold'
                 : 'border-transparent text-[var(--ink-2)] hover:text-[var(--ink)]'
             }`}
           >
-            {currentLang === 'en' ? 'Where It Is Found (Archives)' : 'Dónde se encuentra (Archivos)'}
-          </button>
-          <button
-            type="button"
-            onClick={() => setActiveTab('citation')}
-            className={`py-2.5 px-3 border-b-2 font-medium transition-colors cursor-pointer ${
-              activeTab === 'citation'
-                ? 'border-[var(--signal)] text-[var(--signal)] font-semibold'
-                : 'border-transparent text-[var(--ink-2)] hover:text-[var(--ink)]'
-            }`}
-          >
-            {currentLang === 'en' ? 'Scholarly Citations' : 'Citas Académicas'}
+            {currentLang === 'en' ? 'Archival Repositories' : 'Repositorios de Archivo'}
           </button>
           <button
             type="button"
             onClick={() => setActiveTab('context')}
-            className={`py-2.5 px-3 border-b-2 font-medium transition-colors cursor-pointer ${
+            className={`py-2.5 px-3 border-b-2 font-medium transition-colors cursor-pointer whitespace-nowrap ${
               activeTab === 'context'
                 ? 'border-[var(--signal)] text-[var(--signal)] font-semibold'
                 : 'border-transparent text-[var(--ink-2)] hover:text-[var(--ink)]'
@@ -127,13 +116,13 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
         </div>
 
         {/* Content Body */}
-        <div className="overflow-y-auto flex-1 p-4 sm:p-6 space-y-6">
+        <div className="overflow-y-auto flex-1 p-3.5 sm:p-6 space-y-5">
           {activeTab === 'view' && (
             <div className="space-y-4">
               {/* Controls bar */}
               <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-[var(--ink-3)] bg-[var(--paper-2)] p-2.5 rounded border border-[var(--rule)]">
                 <div className="flex items-center gap-2">
-                  <span>{currentLang === 'en' ? 'Zoom:' : 'Zoom:'}</span>
+                  <span>Zoom:</span>
                   <button
                     type="button"
                     onClick={() => setZoomLevel((z) => Math.max(1, z - 0.25))}
@@ -180,6 +169,7 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
                     href={fullEngraving}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center gap-1 text-[11px] text-[var(--signal)] hover:underline"
                   >
                     <Maximize2 className="h-3 w-3" />
@@ -189,17 +179,17 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
               </div>
 
               {/* Image Frame */}
-              <div className="relative w-full max-h-[58vh] overflow-auto bg-black/90 rounded border border-[var(--rule)] flex items-center justify-center p-2">
+              <div className="relative w-full max-h-[52vh] sm:max-h-[58vh] overflow-auto bg-black/90 rounded border border-[var(--rule)] flex items-center justify-center p-2">
                 <img
                   src={useFullRes ? fullEngraving : webEngraving}
                   alt={currentLang === 'en' ? artwork.title : artwork.titleEs}
                   style={{ transform: `scale(${zoomLevel})`, transformOrigin: 'top center' }}
-                  className="transition-transform duration-150 max-h-[54vh] w-auto object-contain mx-auto rounded-sm shadow-md"
+                  className="transition-transform duration-150 max-h-[48vh] sm:max-h-[54vh] w-auto object-contain mx-auto rounded-sm shadow-md"
                 />
               </div>
 
-              {/* Direct Museum Caption directly below view */}
-              <div className="text-xs font-mono text-[var(--ink-2)] border-l-2 border-[var(--signal)] pl-3 py-1 space-y-1">
+              {/* Direct Caption & Primary Archive */}
+              <div className="text-xs font-mono text-[var(--ink-2)] border-l-2 border-[var(--signal)] pl-3 py-1 space-y-1 bg-[var(--paper-2)]/60 rounded-r">
                 <p className="font-serif italic text-sm text-[var(--ink)] font-semibold">
                   {currentLang === 'en' ? artwork.title : artwork.titleEs}
                 </p>
@@ -216,21 +206,45 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
                     {currentLang === 'en' ? artwork.locationSummary : artwork.locationSummaryEs}
                   </span>
                 </p>
+
+                {/* Scholarly Citation (Single APA Citation placed directly below Primary Archive) */}
+                <div className="mt-3 pt-2.5 border-t border-[var(--rule)] space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-mono uppercase tracking-wider text-[var(--ink-3)] font-semibold">
+                      {currentLang === 'en' ? 'Scholarly Citation (APA 7th):' : 'Cita Académica (APA 7.ª ed.):'}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={handleCopyApa}
+                      className="inline-flex items-center gap-1 font-mono text-[11px] text-[var(--signal)] hover:underline cursor-pointer"
+                    >
+                      {copiedApa ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                      <span>
+                        {copiedApa
+                          ? (currentLang === 'en' ? 'Copied' : 'Copiado')
+                          : (currentLang === 'en' ? 'Copy APA' : 'Copiar APA')}
+                      </span>
+                    </button>
+                  </div>
+                  <p className="font-serif text-[12.5px] leading-relaxed text-[var(--ink)] bg-[var(--paper)] p-2 rounded border border-[var(--rule)]">
+                    {artwork.citations.apa}
+                  </p>
+                </div>
               </div>
             </div>
           )}
 
           {activeTab === 'archives' && (
-            <div className="space-y-5">
+            <div className="space-y-4">
               <div className="space-y-1">
                 <h3 className="text-sm font-mono font-semibold uppercase tracking-wider text-[var(--ink)] flex items-center gap-2">
                   <Landmark className="h-4 w-4 text-[var(--signal)]" />
-                  <span>{currentLang === 'en' ? 'Where It Is Located & Archival Repositories' : 'Dónde Se Encuentra y Archivos Oficiales'}</span>
+                  <span>{currentLang === 'en' ? 'Archival Repositories' : 'Repositorios de Archivo'}</span>
                 </h3>
                 <p className="text-xs text-[var(--ink-2)] leading-relaxed">
                   {currentLang === 'en'
-                    ? 'Original impressions of Gustave Doré’s master wood engraving for Inferno Canto IV (1861 Hachette first edition folio) are permanently preserved in the print and rare-book cabinets of the following premier cultural institutions:'
-                    : 'Las impresiones originales de este grabado maestro en madera de testa para el Infierno Canto IV (primera edición folio de Hachette, 1861) se conservan de forma permanente en los departamentos de estampas y fondos raros de las siguientes instituciones:'}
+                    ? 'Original impressions and high-resolution master records of Gustave Doré’s master wood engraving for Inferno Canto IV (1861 Hachette first edition folio) are permanently preserved in the following official public repositories and national collections:'
+                    : 'Las impresiones originales y registros de alta resolución del grabado maestro en madera de testa para el Infierno Canto IV (primera edición folio de Hachette, 1861) se conservan de forma permanente en los siguientes repositorios de archivo y colecciones nacionales oficiales:'}
                 </p>
               </div>
 
@@ -240,7 +254,7 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
                     key={idx}
                     className="p-3.5 bg-[var(--paper-2)] border border-[var(--rule)] rounded text-xs space-y-2 hover:border-[var(--signal)] transition-colors"
                   >
-                    <div className="flex items-start justify-between gap-2">
+                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2">
                       <div>
                         <div className="flex items-center gap-1.5 font-semibold text-[var(--ink)] font-label text-sm">
                           <MapPin className="h-3.5 w-3.5 text-[var(--signal)] shrink-0" />
@@ -257,9 +271,10 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
                           href={loc.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="shrink-0 inline-flex items-center gap-1 font-mono text-[11px] text-[var(--signal)] hover:underline"
+                          onClick={(e) => e.stopPropagation()}
+                          className="shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[var(--paper)] border border-[var(--rule)] font-mono text-[11px] text-[var(--signal)] hover:bg-[var(--signal)] hover:text-white transition-colors cursor-pointer w-fit"
                         >
-                          <span>{currentLang === 'en' ? 'Catalog / Digital Record' : 'Catálogo / Ficha'}</span>
+                          <span>{currentLang === 'en' ? 'Open Archival Record' : 'Abrir Registro Oficial'}</span>
                           <ExternalLink className="h-3 w-3" />
                         </a>
                       )}
@@ -300,103 +315,8 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
             </div>
           )}
 
-          {activeTab === 'citation' && (
-            <div className="space-y-5">
-              <div className="space-y-1">
-                <h3 className="text-sm font-mono font-semibold uppercase tracking-wider text-[var(--ink)]">
-                  {currentLang === 'en' ? 'Academic Citations Ready to Copy' : 'Citas Académicas Listas para Copiar'}
-                </h3>
-                <p className="text-xs text-[var(--ink-2)]">
-                  {currentLang === 'en'
-                    ? 'Formatted according to standard scholarly manuals (Chicago 17th, APA 7th, MLA 9th, and BibTeX):'
-                    : 'Formateadas según las normas académicas estándar (Chicago 17.ª, APA 7.ª, MLA 9.ª y BibTeX):'}
-                </p>
-              </div>
-
-              {/* Chicago */}
-              <div className="p-3 bg-[var(--paper-2)] border border-[var(--rule)] rounded text-xs space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono font-semibold text-[var(--ink)] text-[11px] uppercase tracking-wider">
-                    Chicago Manual of Style (17th ed., Notes & Bibliography)
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => handleCopy(artwork.citations.chicago, 'chicago')}
-                    className="inline-flex items-center gap-1 font-mono text-[11px] text-[var(--signal)] hover:underline cursor-pointer"
-                  >
-                    {copiedFormat === 'chicago' ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
-                    <span>{copiedFormat === 'chicago' ? (currentLang === 'en' ? 'Copied' : 'Copiado') : (currentLang === 'en' ? 'Copy Chicago' : 'Copiar Chicago')}</span>
-                  </button>
-                </div>
-                <p className="font-serif text-[13px] leading-relaxed text-[var(--ink)] pl-3 border-l-2 border-[var(--rule)]">
-                  {artwork.citations.chicago}
-                </p>
-              </div>
-
-              {/* APA */}
-              <div className="p-3 bg-[var(--paper-2)] border border-[var(--rule)] rounded text-xs space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono font-semibold text-[var(--ink)] text-[11px] uppercase tracking-wider">
-                    APA (7th ed.)
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => handleCopy(artwork.citations.apa, 'apa')}
-                    className="inline-flex items-center gap-1 font-mono text-[11px] text-[var(--signal)] hover:underline cursor-pointer"
-                  >
-                    {copiedFormat === 'apa' ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
-                    <span>{copiedFormat === 'apa' ? (currentLang === 'en' ? 'Copied' : 'Copiado') : (currentLang === 'en' ? 'Copy APA' : 'Copiar APA')}</span>
-                  </button>
-                </div>
-                <p className="font-serif text-[13px] leading-relaxed text-[var(--ink)] pl-3 border-l-2 border-[var(--rule)]">
-                  {artwork.citations.apa}
-                </p>
-              </div>
-
-              {/* MLA */}
-              <div className="p-3 bg-[var(--paper-2)] border border-[var(--rule)] rounded text-xs space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono font-semibold text-[var(--ink)] text-[11px] uppercase tracking-wider">
-                    MLA (9th ed.)
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => handleCopy(artwork.citations.mla, 'mla')}
-                    className="inline-flex items-center gap-1 font-mono text-[11px] text-[var(--signal)] hover:underline cursor-pointer"
-                  >
-                    {copiedFormat === 'mla' ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
-                    <span>{copiedFormat === 'mla' ? (currentLang === 'en' ? 'Copied' : 'Copiado') : (currentLang === 'en' ? 'Copy MLA' : 'Copiar MLA')}</span>
-                  </button>
-                </div>
-                <p className="font-serif text-[13px] leading-relaxed text-[var(--ink)] pl-3 border-l-2 border-[var(--rule)]">
-                  {artwork.citations.mla}
-                </p>
-              </div>
-
-              {/* BibTeX */}
-              <div className="p-3 bg-[var(--paper-2)] border border-[var(--rule)] rounded text-xs space-y-2">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono font-semibold text-[var(--ink)] text-[11px] uppercase tracking-wider">
-                    BibTeX Entry
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => handleCopy(artwork.citations.bibtex, 'bibtex')}
-                    className="inline-flex items-center gap-1 font-mono text-[11px] text-[var(--signal)] hover:underline cursor-pointer"
-                  >
-                    {copiedFormat === 'bibtex' ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
-                    <span>{copiedFormat === 'bibtex' ? (currentLang === 'en' ? 'Copied' : 'Copiado') : (currentLang === 'en' ? 'Copy BibTeX' : 'Copiar BibTeX')}</span>
-                  </button>
-                </div>
-                <pre className="font-mono text-[11px] p-2 bg-[var(--paper)] rounded border border-[var(--rule)] overflow-x-auto text-[var(--ink-2)]">
-                  {artwork.citations.bibtex}
-                </pre>
-              </div>
-            </div>
-          )}
-
           {activeTab === 'context' && (
-            <div className="space-y-5">
+            <div className="space-y-4">
               <div className="space-y-2">
                 <h3 className="text-sm font-mono font-semibold uppercase tracking-wider text-[var(--ink)] flex items-center gap-2">
                   <BookOpen className="h-4 w-4 text-[var(--signal)]" />
@@ -408,7 +328,7 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
               </div>
 
               {/* Poetic verse */}
-              <div className="p-4 bg-[var(--paper-2)] border border-[var(--rule)] rounded space-y-3">
+              <div className="p-3.5 sm:p-4 bg-[var(--paper-2)] border border-[var(--rule)] rounded space-y-3">
                 <div className="flex items-center gap-2 text-xs font-mono text-[var(--signal)] font-medium">
                   <Quote className="h-3.5 w-3.5" />
                   <span>{artwork.literaryPassage.work} &middot; {artwork.literaryPassage.canto}</span>
@@ -439,15 +359,15 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({ isOpen, onClose, cur
 
         {/* Footer */}
         <div className="p-3 sm:p-4 border-t border-[var(--rule)] bg-[var(--paper-2)] flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
-          <span className="text-[var(--ink-3)]">
+          <span className="text-[var(--ink-3)] text-[11px]">
             {currentLang === 'en'
-              ? 'Public domain work (1861). Master scan preserved in national libraries.'
-              : 'Obra en dominio público (1861). Registro y conservación en bibliotecas nacionales.'}
+              ? 'Public domain work (1861). Master preservation scans in official national libraries.'
+              : 'Obra en dominio público (1861). Preservación oficial en archivos y bibliotecas nacionales.'}
           </span>
           <button
             type="button"
             onClick={onClose}
-            className="px-3 py-1.5 bg-[var(--ink)] text-[var(--paper)] rounded hover:opacity-90 transition-opacity cursor-pointer text-xs font-mono font-medium"
+            className="px-3.5 py-1.5 bg-[var(--ink)] text-[var(--paper)] rounded hover:opacity-90 transition-opacity cursor-pointer text-xs font-mono font-medium"
           >
             {currentLang === 'en' ? 'Close' : 'Cerrar'}
           </button>

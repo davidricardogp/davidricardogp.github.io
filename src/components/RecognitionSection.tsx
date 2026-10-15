@@ -37,11 +37,19 @@ export const RecognitionSection: React.FC<RecognitionSectionProps> = ({ currentL
             <span>
               {' '}—{' '}
               {currentLang === 'en' ? 'Organized by ' : 'Organizado por '}
-              <a href="https://en.tongji.edu.cn/" target="_blank" rel="noopener noreferrer" className="academic-link">Tongji University</a>,{' '}
-              <a href="https://en.njupt.edu.cn/" target="_blank" rel="noopener noreferrer" className="academic-link">Nanjing University of Posts and Telecommunications</a>,{' '}
-              <a href="https://en.shnu.edu.cn/" target="_blank" rel="noopener noreferrer" className="academic-link">Shanghai Normal University</a>{' '}
+              <a href="https://en.tongji.edu.cn/" target="_blank" rel="noopener noreferrer" className="academic-link">
+                {currentLang === 'en' ? 'Tongji University' : 'Universidad de Tongji'}
+              </a>,{' '}
+              <a href="https://en.njupt.edu.cn/" target="_blank" rel="noopener noreferrer" className="academic-link">
+                {currentLang === 'en' ? 'Nanjing University of Posts and Telecommunications' : 'Universidad de Correos y Telecomunicaciones de Nanjing'}
+              </a>,{' '}
+              <a href="https://en.shnu.edu.cn/" target="_blank" rel="noopener noreferrer" className="academic-link">
+                {currentLang === 'en' ? 'Shanghai Normal University' : 'Universidad Normal de Shanghái'}
+              </a>{' '}
               {currentLang === 'en' ? 'and' : 'y'}{' '}
-              <a href="https://www.upm.es/" target="_blank" rel="noopener noreferrer" className="academic-link">Polytechnic University of Madrid</a>.
+              <a href="https://www.upm.es/" target="_blank" rel="noopener noreferrer" className="academic-link">
+                {currentLang === 'en' ? 'Polytechnic University of Madrid' : 'Universidad Politécnica de Madrid'}
+              </a>.
             </span>
           </li>
 
@@ -65,7 +73,7 @@ export const RecognitionSection: React.FC<RecognitionSectionProps> = ({ currentL
           <li className="relative pl-5 leading-relaxed">
             <span className="absolute left-0 top-[0.68em] -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[var(--ink)]" aria-hidden="true" />
             <a
-              href="https://www.leadership-challenge.org/past-glc-2024"
+              href="https://www.leadership-challenge.org/about-glc"
               target="_blank"
               rel="noopener noreferrer"
               className="academic-link font-medium text-[var(--ink)] inline-flex items-baseline gap-1"

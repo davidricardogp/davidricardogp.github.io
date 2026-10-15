@@ -57,8 +57,8 @@ export const Topbar: React.FC<TopbarProps> = ({
           </a>
         </p>
 
-        {/* Desktop / Tablet Navigation links */}
-        <nav className="hidden md:flex items-center gap-4 lg:gap-5 text-[11px] font-data tracking-[0.08em] uppercase text-[var(--ink-2)]" aria-label="Primary">
+        {/* Desktop & Tablet Navigation links (md: and up) */}
+        <nav className="hidden md:flex items-center gap-2.5 lg:gap-4 xl:gap-5 text-[10.5px] lg:text-[11px] font-data tracking-[0.08em] uppercase text-[var(--ink-2)]" aria-label="Primary">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -112,9 +112,9 @@ export const Topbar: React.FC<TopbarProps> = ({
           </button>
         </nav>
 
-        {/* Mobile controls: Language, Theme, and Menu Drawer Button */}
+        {/* Mobile controls: Language, Theme, and Menu Drawer Button (shown only on mobile <md) */}
         <div className="flex md:hidden items-center gap-2">
-          {/* Mobile Language Toggle */}
+          {/* Mobile/Tablet Language Toggle */}
           <div className="flex items-center rounded border border-[var(--rule)] p-0.5 text-[10px] font-data">
             <button
               type="button"
@@ -144,7 +144,7 @@ export const Topbar: React.FC<TopbarProps> = ({
             </button>
           </div>
 
-          {/* Mobile Theme Toggle */}
+          {/* Mobile/Tablet Theme Toggle */}
           <button
             type="button"
             onClick={onToggleTheme}
@@ -154,7 +154,7 @@ export const Topbar: React.FC<TopbarProps> = ({
             {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
 
-          {/* Mobile Menu Hamburger */}
+          {/* Mobile/Tablet Menu Hamburger */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -167,9 +167,9 @@ export const Topbar: React.FC<TopbarProps> = ({
         </div>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile & Tablet Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-[var(--rule)] bg-[var(--paper)] px-4 py-4 shadow-lg animate-in slide-in-from-top-2 duration-150">
+        <div className="lg:hidden border-b border-[var(--rule)] bg-[var(--paper)] px-4 py-4 shadow-lg animate-in slide-in-from-top-2 duration-150">
           <nav className="flex flex-col space-y-1 font-data text-xs tracking-wider" aria-label="Mobile Navigation">
             <button
               type="button"

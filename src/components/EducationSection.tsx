@@ -148,7 +148,9 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ currentLang 
                   rel="noopener noreferrer"
                   className="academic-link"
                 >
-                  CAF — Development Bank of Latin America and the Caribbean
+                  {currentLang === 'en'
+                    ? 'CAF — Development Bank of Latin America and the Caribbean'
+                    : 'CAF — Banco de Desarrollo de América Latina y el Caribe'}
                 </a>{' '}
                 {currentLang === 'en' ? 'and' : 'y'}{' '}
                 <a
@@ -348,7 +350,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ currentLang 
                 >
                   {currentLang === 'en'
                     ? 'Center for Research in Experimental Economics (CREE)'
-                    : 'Center for Research in Experimental Economics (CREE)'}
+                    : 'Centro de Investigación en Economía Experimental (CREE)'}
                 </a>
               </div>
               <div className="text-xs font-label text-[var(--ink-3)] font-mono">
@@ -371,7 +373,9 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ currentLang 
                   rel="noopener noreferrer"
                   className="academic-link"
                 >
-                  CAF — Development Bank of Latin America and the Caribbean
+                  {currentLang === 'en'
+                    ? 'CAF — Development Bank of Latin America and the Caribbean'
+                    : 'CAF — Banco de Desarrollo de América Latina y el Caribe'}
                 </a>
               </div>
               <div className="text-xs font-label text-[var(--ink-3)] font-mono">

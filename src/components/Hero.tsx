@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
 
   return (
     <header
-      className="min-h-auto md:min-h-[calc(100vh-3.5rem)] flex flex-col justify-between py-6 sm:py-10 md:py-16 border-b border-[var(--rule)]"
+      className="min-h-auto lg:min-h-[calc(100vh-3.5rem)] flex flex-col justify-between py-6 sm:py-8 md:py-10 lg:py-14 border-b border-[var(--rule)]"
       id="intro"
     >
       {/* Top / Main Hero Content */}

@@ -17,8 +17,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
       <div className="pt-6 border-t border-[var(--rule)] max-w-2xl mx-auto space-y-3">
         <p className="font-serif italic text-[16px] sm:text-[17px] text-[var(--ink)] leading-relaxed text-center">
           {currentLang === 'en'
-            ? '“I propose to consider the question: Can machines think?”'
-            : '«Propongo considerar la pregunta: ¿Pueden pensar las máquinas?»'}
+            ? '“I propose to consider the question, ‘Can machines think?’”'
+            : '«Propongo considerar la pregunta: "¿Pueden pensar las máquinas?"»'}
         </p>
         <div className="text-right">
           <p className="font-mono text-xs text-[var(--ink-3)] tracking-wide leading-relaxed">
