@@ -14,6 +14,28 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
     setSelectedPaper(paper);
   };
 
+  const renderCitation = (citation: string) => {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const parts = citation.split(urlRegex);
+    return parts.map((part, i) => {
+      if (part.match(urlRegex)) {
+        return (
+          <a
+            key={i}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="text-[var(--signal)] underline hover:text-[var(--signal-lift)] break-all not-italic font-mono text-[12px]"
+          >
+            {part}
+          </a>
+        );
+      }
+      return <span key={i}>{part}</span>;
+    });
+  };
+
   return (
     <section className="py-12 border-b border-[var(--rule)]" id="research">
       <div className="space-y-10">
@@ -49,6 +71,18 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
                 </div>
                 <div className="text-xs font-label text-[var(--ink-3)] font-mono flex flex-wrap items-center gap-3">
                   <span>{paper.meta}</span>
+                  {paper.url && (
+                    <span
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(paper.url, '_blank', 'noopener,noreferrer');
+                      }}
+                      className="inline-flex items-center gap-1 text-[var(--signal)] hover:underline cursor-pointer"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                      <span>{currentLang === 'en' ? 'Paper / DOI' : 'Publicación'}</span>
+                    </span>
+                  )}
                   {paper.githubUrl && (
                     <span
                       onClick={(e) => {
@@ -63,7 +97,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
                   )}
                 </div>
                 <p className="text-sm font-prose text-[var(--ink-2)] italic">
-                  {paper.citation}
+                  {renderCitation(paper.citation)}
                 </p>
               </article>
             ))}
@@ -90,6 +124,18 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
                 </div>
                 <div className="text-xs font-label text-[var(--ink-3)] font-mono flex flex-wrap items-center gap-x-3 gap-y-1">
                   <span>{book.meta}</span>
+                  {book.url && (
+                    <span
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(book.url, '_blank', 'noopener,noreferrer');
+                      }}
+                      className="inline-flex items-center gap-1 text-[var(--signal)] hover:underline cursor-pointer"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                      <span>{currentLang === 'en' ? 'Amazon Book' : 'Ver en Amazon'}</span>
+                    </span>
+                  )}
                   {book.githubUrl && (
                     <span
                       onClick={(e) => {
@@ -104,7 +150,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
                   )}
                 </div>
                 <p className="text-sm font-prose text-[var(--ink-2)] italic">
-                  {book.citation}
+                  {renderCitation(book.citation)}
                 </p>
               </article>
             ))}
@@ -131,6 +177,18 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
                 </div>
                 <div className="text-xs font-label text-[var(--ink-3)] font-mono flex flex-wrap items-center gap-x-3 gap-y-1">
                   <span>{report.meta}</span>
+                  {report.url && (
+                    <span
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(report.url, '_blank', 'noopener,noreferrer');
+                      }}
+                      className="inline-flex items-center gap-1 text-[var(--signal)] hover:underline cursor-pointer"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                      <span>{currentLang === 'en' ? 'Report DOI' : 'Informe DOI'}</span>
+                    </span>
+                  )}
                   {report.githubUrl && (
                     <span
                       onClick={(e) => {
@@ -145,7 +203,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
                   )}
                 </div>
                 <p className="text-sm font-prose text-[var(--ink-2)] italic">
-                  {report.citation}
+                  {renderCitation(report.citation)}
                 </p>
               </article>
             ))}

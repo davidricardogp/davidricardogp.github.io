@@ -7,9 +7,10 @@ interface HeroProps {
   currentLang: 'en' | 'es';
   onOpenCvModal: () => void;
   onOpenArtworkModal: () => void;
+  onNavigateNext?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenArtworkModal }) => {
+export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenArtworkModal, onNavigateNext }) => {
   const [copiedEmail, setCopiedEmail] = useState(false);
 
   const handleCopyEmail = (e: React.MouseEvent) => {
@@ -122,7 +123,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
             className="signal-link cursor-pointer inline-flex items-center gap-1.5"
           >
             <FileText className="h-3.5 w-3.5 inline" />
-            <span>Curriculum Vitae</span>
+            <span>CV</span>
           </button>
           <a
             href={DAVID_DATA.contact.orcid}
@@ -139,6 +140,14 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
             className="academic-link ext"
           >
             LinkedIn
+          </a>
+          <a
+            href={DAVID_DATA.contact.substack}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="academic-link ext"
+          >
+            Substack {currentLang === 'en' ? '(Personal Blog)' : '(Blog Personal)'}
           </a>
           <a
             href={DAVID_DATA.contact.scholar}
@@ -233,24 +242,22 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenCvModal, onOpenAr
         </div>
       </div>
 
-      {/* Screen bottom subtle cue matching Louis Zhu */}
-      <div className="pt-6 sm:pt-8">
-        <a
-          href="#research"
-          className="group inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[var(--ink-3)] hover:text-[var(--signal)] transition-colors"
-        >
-          <span>{currentLang === 'en' ? 'Scroll down' : 'Desplázate'}</span>
-          <span className="hidden sm:inline">
-            {currentLang === 'en' ? ', or press 1–6' : ', o presiona 1–6'}
-          </span>
-          <span className="hidden sm:inline-flex items-center gap-1 text-[10px] text-[var(--ink-3)]">
-            <kbd className="px-1.5 py-0.5 rounded bg-[var(--paper-sunk)] border border-[var(--rule)] font-mono text-[10px] text-[var(--ink-2)] shadow-xs">1</kbd>
-            <span>–</span>
-            <kbd className="px-1.5 py-0.5 rounded bg-[var(--paper-sunk)] border border-[var(--rule)] font-mono text-[10px] text-[var(--ink-2)] shadow-xs">6</kbd>
-          </span>
-          <ArrowDown className="h-3.5 w-3.5 transition-transform group-hover:translate-y-0.5 text-[var(--signal)]" />
-        </a>
-      </div>
+      {/* Screen bottom transition button to Section 01 */}
+      {onNavigateNext && (
+        <div className="pt-6 sm:pt-8">
+          <button
+            type="button"
+            onClick={onNavigateNext}
+            className="group inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-[var(--ink-2)] hover:text-[var(--signal)] transition-colors cursor-pointer"
+          >
+            <span className="font-semibold">{currentLang === 'en' ? 'Next: 01 Research & Publications →' : 'Siguiente: 01 Investigación y Publicaciones →'}</span>
+            <span className="hidden sm:inline-flex items-center gap-1 text-[10px] text-[var(--ink-3)]">
+              <span>{currentLang === 'en' ? '(or press 1)' : '(o presiona 1)'}</span>
+              <kbd className="px-1.5 py-0.5 rounded bg-[var(--paper-sunk)] border border-[var(--rule)] font-mono text-[10px] text-[var(--ink-2)] shadow-xs">1</kbd>
+            </span>
+          </button>
+        </div>
+      )}
     </header>
   );
 };

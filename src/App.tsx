@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Topbar } from './components/Topbar';
+import { Topbar, SectionId } from './components/Topbar';
 import { Hero } from './components/Hero';
 import { ResearchSection } from './components/ResearchSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { EducationSection } from './components/EducationSection';
 import { TalksSection } from './components/TalksSection';
 import { RecognitionSection } from './components/RecognitionSection';
+import { SectionNavPager } from './components/SectionNavPager';
 import { AskMeAnything } from './components/AskMeAnything';
 import { Footer } from './components/Footer';
 import { CvModal } from './components/CvModal';
@@ -29,6 +30,7 @@ export default function App() {
     return false;
   });
 
+  const [activeSection, setActiveSection] = useState<SectionId>('00');
   const [isCvOpen, setIsCvOpen] = useState(false);
   const [isArtworkOpen, setIsArtworkOpen] = useState(false);
 
@@ -47,6 +49,13 @@ export default function App() {
     document.documentElement.setAttribute('lang', currentLang);
   }, [currentLang]);
 
+  const handleSelectSection = (section: SectionId) => {
+    setActiveSection(section);
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement | null;
@@ -60,23 +69,19 @@ export default function App() {
       }
       if (isCvOpen || isArtworkOpen) return;
 
-      const keyToSection: Record<string, string> = {
-        '0': 'intro',
-        '1': 'research',
-        '2': 'experience',
-        '3': 'education',
-        '4': 'talks',
-        '5': 'recognition',
-        '6': 'ask'
+      const keyToSection: Record<string, SectionId> = {
+        '0': '00',
+        '1': '01',
+        '2': '02',
+        '3': '03',
+        '4': '04',
+        '5': '05'
       };
 
-      const sectionId = keyToSection[e.key];
-      if (sectionId) {
-        const targetElement = document.getElementById(sectionId);
-        if (targetElement) {
-          e.preventDefault();
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
+      const targetSection = keyToSection[e.key];
+      if (targetSection) {
+        e.preventDefault();
+        handleSelectSection(targetSection);
       }
     };
 
@@ -94,39 +99,58 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[var(--paper)] text-[var(--ink)] transition-colors">
-      {/* Topbar navigation matching Louis Zhu */}
+      {/* Topbar navigation: clean tab switcher between 00 and 05 */}
       <Topbar
         isDark={isDark}
         onToggleTheme={toggleTheme}
         currentLang={currentLang}
         onToggleLang={toggleLang}
+        activeSection={activeSection}
+        onSelectSection={handleSelectSection}
       />
 
       {/* Main Container on 42rem / max-w-3xl rhythm */}
       <main className="w-full max-w-3xl mx-auto px-4 sm:px-6 md:px-8 py-4 md:py-6">
-        {/* 00 Who am I + contact info directly beneath utility links + Doré Engraving */}
-        <Hero
-          currentLang={currentLang}
-          onOpenCvModal={() => setIsCvOpen(true)}
-          onOpenArtworkModal={() => setIsArtworkOpen(true)}
-        />
+        {/* Render each section separately as its own page tab */}
+        {activeSection === '00' && (
+          <Hero
+            currentLang={currentLang}
+            onOpenCvModal={() => setIsCvOpen(true)}
+            onOpenArtworkModal={() => setIsArtworkOpen(true)}
+            onNavigateNext={() => handleSelectSection('01')}
+          />
+        )}
 
-        {/* 01 Research & Publications */}
-        <ResearchSection currentLang={currentLang} />
+        {activeSection === '01' && (
+          <ResearchSection currentLang={currentLang} />
+        )}
 
-        {/* 02 Experience */}
-        <ExperienceSection currentLang={currentLang} />
+        {activeSection === '02' && (
+          <ExperienceSection currentLang={currentLang} />
+        )}
 
-        {/* 03 Education */}
-        <EducationSection currentLang={currentLang} />
+        {activeSection === '03' && (
+          <EducationSection currentLang={currentLang} />
+        )}
 
-        {/* 04 Talks & community */}
-        <TalksSection currentLang={currentLang} />
+        {activeSection === '04' && (
+          <TalksSection currentLang={currentLang} />
+        )}
 
-        {/* 05 Recognition & Awards */}
-        <RecognitionSection currentLang={currentLang} />
+        {activeSection === '05' && (
+          <RecognitionSection currentLang={currentLang} />
+        )}
 
-        {/* 06 Ask me anything */}
+        {/* Section Step Pager between tabs (with keyboard shortcuts) for non-hero tabs */}
+        {activeSection !== '00' && (
+          <SectionNavPager
+            activeSection={activeSection}
+            onSelectSection={handleSelectSection}
+            currentLang={currentLang}
+          />
+        )}
+
+        {/* Ask about David Ricardo — persistent at bottom of every section (without 06 index) */}
         <AskMeAnything currentLang={currentLang} />
 
         {/* Footer */}

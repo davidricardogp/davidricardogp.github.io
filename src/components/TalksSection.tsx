@@ -224,6 +224,92 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
                 : ', director del centro, para ofrecer una charla sobre lecciones de política internacional y los retos de los ecosistemas emprendedores en Perú y América Latina.'}
             </p>
           </article>
+
+          {/* Interviewer — XL Encuentro de Economistas del BCRP */}
+          <article className="space-y-1 text-[17px] font-prose leading-relaxed">
+            <div className="font-semibold text-[18px]">
+              <a
+                href="https://www.udep.edu.pe/hoy/2022/11/campus-lima-y-casona-pardo-albergaron-xl-encuentro-de-economistas-de-bcrp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link inline-flex items-baseline gap-1"
+              >
+                <span>
+                  {currentLang === 'en'
+                    ? 'Interviewer — XL Encuentro de Economistas del BCRP'
+                    : 'Entrevistador — XL Encuentro de Economistas del BCRP'}
+                </span>
+                <ExternalLink className="h-3 w-3 opacity-60 shrink-0 self-center" />
+              </a>
+            </div>
+            <div className="text-xs font-label text-[var(--ink-3)] font-mono">
+              <a
+                href="https://es.wikipedia.org/wiki/Casona_Pardo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                Casona Pardo
+              </a>{' '}
+              · {currentLang === 'en' ? 'Lima, Peru · Oct. 25, 2022' : 'Lima, Perú · 25 Oct. 2022'}
+            </div>
+            <p className="text-[17px] text-[var(--ink-2)] font-prose">
+              {currentLang === 'en' ? 'Interviewed ' : 'Entrevistó al '}
+              <a
+                href="https://www.bcrp.gob.pe/sobre-el-bcrp/organizacion/directorio/julio-velarde.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                Julio Velarde
+              </a>
+              {currentLang === 'en'
+                ? ', Ph.D., President of the Central Reserve Bank of Peru (BCRP), about inflation in Peru.'
+                : ', Ph.D., Presidente del Banco Central de Reserva del Perú (BCRP), sobre la inflación en el Perú.'}
+            </p>
+          </article>
+
+          {/* Speaker — EcoTalks */}
+          <article className="space-y-1 text-[17px] font-prose leading-relaxed">
+            <div className="font-semibold text-[18px]">
+              <a
+                href="https://drive.google.com/file/d/1k7CIEhFWrfKKa_q03IHGvuCvUoma_ZoV/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link inline-flex items-baseline gap-1"
+              >
+                <span>
+                  {currentLang === 'en' ? 'Speaker — EcoTalks' : 'Ponente — EcoTalks (Entre Economistas)'}
+                </span>
+                <ExternalLink className="h-3 w-3 opacity-60 shrink-0 self-center" />
+              </a>
+            </div>
+            <div className="text-xs font-label text-[var(--ink-3)] font-mono">
+              <a
+                href="https://www.udep.edu.pe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                {currentLang === 'en' ? 'University of Piura' : 'Universidad de Piura'}
+              </a>{' '}
+              · {currentLang === 'en' ? 'Los Andes University Cultural Center · Lima, Peru · May 7, 2022' : 'Centro Cultural Universitario Los Andes · Lima, Perú · 7 May. 2022'}
+            </div>
+            <p className="text-[17px] text-[var(--ink-2)] font-prose">
+              {currentLang === 'en'
+                ? 'Discussed fundamental economic principles and key economic issues with economics students, alongside '
+                : 'Conversatorio sobre principios económicos fundamentales y coyuntura económica con estudiantes de economía, junto al Dr. '}
+              <a
+                href="https://www.udep.edu.pe/perfil/miguel-carpio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                Miguel Ángel Carpio
+              </a>
+              {currentLang === 'en' ? ', Ph.D.' : ', Ph.D.'}
+            </p>
+          </article>
         </div>
 
         {/* Congress / Congresos */}

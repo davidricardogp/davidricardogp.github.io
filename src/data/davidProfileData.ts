@@ -175,6 +175,7 @@ export const DAVID_DATA = {
     cvFilename: "David_Ricardo_Gonzales_Pena_CV.pdf",
     github: "https://github.com/davidricardogp",
     linkedin: "https://www.linkedin.com/in/davidricardogp",
+    substack: "https://davidricardogp.substack.com/",
     scholar: "https://scholar.google.com/citations?user=XrrBD8wAAAAJ&hl=en",
     orcid: "https://orcid.org/0009-0008-2106-3728",
     orcidId: "0009-0008-2106-3728"
@@ -337,8 +338,8 @@ export const DAVID_DATA = {
       title: "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao",
       authors: "Gonzales Peña, D. R., & Gonzales Castillo, J. R. (2026)",
       meta: "Research Square · Working paper · Sept. 2026",
-      citation: "Gonzales Peña, D. R., & Gonzales Castillo, J. R. (2026). Fuel demand, spatial competition, and local market structure: Evidence from gasohol retailing in Lima and Callao. Research Square. https://doi.org/10.21203/rs.3.rs-10995861/v1",
-      url: "https://doi.org/10.21203/rs.3.rs-10995861/v1",
+      citation: "Gonzales Peña, D. R., & Gonzales Castillo, J. R. (2026). Fuel demand, spatial competition, and local market structure: Evidence from gasohol retailing in Lima and Callao. Research Square. https://www.researchsquare.com/article/rs-10995861/v2",
+      url: "https://www.researchsquare.com/article/rs-10995861/v2",
       type: "working-paper",
       badge: "Working Paper",
       badgeEs: "Documento de Trabajo",
@@ -352,9 +353,9 @@ export const DAVID_DATA = {
     {
       id: "wp-3",
       title: "Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru",
-      authors: "Gonzales Peña, D. R., & Solari, Y. (2024)",
+      authors: "Gonzales Peña, D. R., & Solari Han, Y. (2024)",
       meta: "Social Science Research Network (SSRN) · Working paper · Apr. 2024",
-      citation: "Gonzales Peña, D. R., & Solari, Y. (2024). Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru. Social Science Research Network (SSRN). https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764",
+      citation: "Gonzales Peña, D. R., & Solari Han, Y. (2024). Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru. Social Science Research Network (SSRN). https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764",
       url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764",
       type: "working-paper",
       badge: "Working Paper",
@@ -581,21 +582,23 @@ export const DAVID_DATA = {
     },
     {
       id: "comp-6",
-      title: "Summer School — Barcelona School of Economics",
-      titleEs: "Escuela de Verano — Barcelona School of Economics",
-      meta: "Barcelona, Spain · Jun. 2024",
-      metaEs: "Barcelona, España · Jun. 2024",
-      details: ["Energy Economics."],
-      detailsEs: ["Economía de la Energía."]
+      title: "Empirical Methods for the Analysis of the Energy Transition — BSE Summer School 2024",
+      titleEs: "Métodos Empíricos para el Análisis de la Transición Energética — Escuela de Verano BSE 2024",
+      meta: "Barcelona School of Economics · Barcelona, Spain · Jun. 17 – 21, 2024",
+      metaEs: "Barcelona School of Economics · Barcelona, España · 17 – 21 de junio de 2024",
+      details: ["Empirical Methods for the Analysis of the Energy Transition (17.50 hours) taught by Prof. Mar Reguant at the Barcelona School of Economics (BSE)."],
+      detailsEs: ["Métodos Empíricos para el Análisis de la Transición Energética (17,50 horas) impartido por la Prof. Mar Reguant en la Barcelona School of Economics (BSE)."],
+      url: "https://bse.eu/"
     },
     {
       id: "comp-7",
-      title: "Winter Methods School — Pompeu Fabra University",
-      titleEs: "Escuela de Métodos de Invierno — Universitat Pompeu Fabra",
-      meta: "Barcelona, Spain · Mar. 2024",
-      metaEs: "Barcelona, España · Mar. 2024",
-      details: ["Measuring Citizen’s Digital Behaviours."],
-      detailsEs: ["Medición de Comportamientos Digitales de la Ciudadanía."]
+      title: "5th edition of the RECSM Winter Methods School — Universitat Pompeu Fabra",
+      titleEs: "5ª edición de la Escuela de Métodos de Invierno RECSM — Universitat Pompeu Fabra",
+      meta: "Barcelona, Spain · Mar. 11 – 15, 2024",
+      metaEs: "Barcelona, España · 11 – 15 de marzo de 2024",
+      details: ["Measuring Citizen’s Digital Behaviours Using Web Trackers and Data Donations (9 hours) at the Research and Expertise Centre for Survey Methodology (RECSM, directed by Prof. Mariano Torcal)."],
+      detailsEs: ["Medición de Comportamientos Digitales de la Ciudadanía mediante Web Trackers y Donaciones de Datos (9 horas) en el Research and Expertise Centre for Survey Methodology (RECSM, dirigido por el Prof. Mariano Torcal)."],
+      url: "https://www.upf.edu/web/recsm"
     },
     {
       id: "comp-8",
@@ -689,11 +692,45 @@ export const DAVID_DATA = {
       meta: "University of Piura, Center for Innovation & Entrepreneurship (Hub UDEP) · Piura, Peru · Aug. 5, 2025",
       metaEs: "Universidad de Piura, Centro de Innovación y Emprendimiento (Hub UDEP) · Piura, Perú · 5 Ago. 2025",
       description: "Invited by Carlos Rodrich Portugal, director of the center, to give a talk on international policy lessons with the challenges faced by entrepreneurial ecosystems in Peru and Latin America.",
-      descriptionEs: "Invitado por Carlos Rodrich Portugal, director del centro, para ofrecer una charla sobre lecciones de política internacional y los retos de los ecosistemas emprendedores en Perú y América Latina.",
+      descriptionEs: "Invitado por Carlos Rodrich Portugal, director del centro, para ofrecer una charla sobre lecciones de política internacional y los retos de los ecosistemas emprendedores en Perú y América Latina."
+    },
+    {
+      id: "talk-5",
+      title: "Interviewer — XL Encuentro de Economistas del BCRP",
+      titleEs: "Entrevistador — XL Encuentro de Economistas del BCRP",
+      meta: "Casona Pardo · Lima, Peru · Oct. 25, 2022",
+      metaEs: "Casona Pardo · Lima, Perú · 25 de octubre de 2022",
+      description: "Interviewed Julio Velarde, Ph.D., President of the Central Reserve Bank of Peru (BCRP), about inflation in Peru.",
+      descriptionEs: "Entrevistó al Dr. Julio Velarde, Presidente del Banco Central de Reserva del Perú (BCRP), sobre la inflación en el Perú.",
+      url: "https://www.udep.edu.pe/hoy/2022/11/campus-lima-y-casona-pardo-albergaron-xl-encuentro-de-economistas-de-bcrp/"
+    },
+    {
+      id: "talk-6",
+      title: "Speaker — EcoTalks",
+      titleEs: "Ponente — EcoTalks (Entre Economistas)",
+      meta: "University of Piura · Los Andes University Cultural Center · Lima, Peru · May 7, 2022",
+      metaEs: "Universidad de Piura · Centro Cultural Universitario Los Andes · Lima, Perú · 7 de mayo de 2022",
+      description: "Discussed fundamental economic principles and key economic issues with economics students, alongside Miguel Ángel Carpio, Ph.D.",
+      descriptionEs: "Conversatorio sobre principios económicos fundamentales y coyuntura económica con estudiantes de economía, junto al Dr. Miguel Ángel Carpio.",
+      url: "https://drive.google.com/file/d/1k7CIEhFWrfKKa_q03IHGvuCvUoma_ZoV/view?usp=drive_link"
     }
   ] as TalkItem[],
 
   affiliations: [
+    {
+      id: "aff-that",
+      title: "Thinking About Thinking (ThAT)",
+      titleEs: "Thinking About Thinking (ThAT)",
+      meta: "Princeton, NJ · 2026 – Present",
+      metaEs: "Princeton, NJ · 2026 – Actualidad",
+      details: [
+        "Fellow. ThAT is a nonprofit organisation that brings together a global community working across AI, entrepreneurship, neuroscience, mathematics and scientific discovery."
+      ],
+      detailsEs: [
+        "Fellow. ThAT es una organización sin fines de lucro que reúne a una comunidad global interdisciplinaria en inteligencia artificial, emprendimiento, neurociencia, matemáticas y descubrimiento científico."
+      ],
+      url: "https://www.thinkingaboutthinking.org/"
+    },
     {
       id: "aff-1",
       title: "WAPOR Latinoamérica",
@@ -728,6 +765,16 @@ export const DAVID_DATA = {
 
   congresses: [
     {
+      id: "cong-ae-2026",
+      title: "AE Global Summit 2026: Open Problems in AI",
+      titleEs: "AE Global Summit 2026: Open Problems in AI",
+      session: "Sessions: AI Research Breakthroughs · AI × Enterprise · AI × Entrepreneurship",
+      sessionEs: "Sesiones: AI Research Breakthroughs · AI × Enterprise · AI × Entrepreneurship",
+      meta: "London, United Kingdom · Wed. 25 – Fri. 27 Nov. 2026",
+      metaEs: "Londres, Reino Unido · Mié. 25 – Vie. 27 de noviembre de 2026",
+      url: "https://www.algopreneurship.org/"
+    },
+    {
       id: "cong-1",
       title: "GitHub Universe 2026",
       titleEs: "GitHub Universe 2026",
@@ -761,7 +808,7 @@ export const DAVID_DATA = {
       titleEs: "Hangar 51 Accelerator 2024",
       meta: "London, United Kingdom · Nov. 27, 2024",
       metaEs: "Londres, Reino Unido · 27 de noviembre de 2024",
-      url: "https://www.iaginnovation.com/hangar-51/"
+      url: "https://www.linkedin.com/posts/plug-and-play-uk_the-8th-edition-of-iags-hangar-51-accelerator-activity-7270767020621578240-BkvC"
     },
     {
       id: "cong-5",
@@ -777,99 +824,114 @@ export const DAVID_DATA = {
       titleEs: "4YFN Barcelona 2024",
       meta: "Barcelona, Spain · Feb. 26 – 29, 2024",
       metaEs: "Barcelona, España · 26 – 29 de febrero de 2024",
-      url: "https://www.4yfn.com/"
+      url: "https://emprenedoria.barcelonactiva.cat/es/4yfn24"
     }
   ] as CongressItem[],
 
   awards: [
     {
-      id: "aw-1",
-      title: "Silver Award - China International College Students’ Innovation Competition 2026 (Spain Division)",
-      titleEs: "Premio de Plata - China International College Students’ Innovation Competition 2026 (División España)",
-      description: "Organized by Tongji University, Nanjing University of Posts and Telecommunications, Shanghai Normal University and Polytechnic University of Madrid.",
-      descriptionEs: "Organizado por Tongji University, Nanjing University of Posts and Telecommunications, Shanghai Normal University y Universidad Politécnica de Madrid.",
+      id: "aw-caf-2026",
+      title: "CAF Scholarship — Diploma in Governance and Public Innovation (5th Edition)",
+      titleEs: "Beca CAF — Diplomado en Gobernabilidad e Innovación Pública (5.ª Edición)",
+      description: "Awarded a scholarship by CAF Development Bank of Latin America and the Caribbean to pursue the Diploma in Governance and Public Innovation at Complutense University of Madrid. Madrid, Spain · Dec. 30, 2026.",
+      descriptionEs: "Beneficiario de una beca otorgada por CAF — Banco de Desarrollo de América Latina y el Caribe para cursar el Diplomado en Gobernabilidad e Innovación Pública en la Universidad Complutense de Madrid. Madrid, España · 30 Dic. 2026.",
+      url: "https://www.caf.com/es/capacitaciones/diplomado-en-gobernabilidad-e-innovacion-publica-espana-5-ed/"
+    },
+    {
+      id: "aw-that-2026",
+      title: "Thinking About Thinking (ThAT) Cohort Fellowship",
+      titleEs: "Thinking About Thinking (ThAT) Cohort Fellowship",
+      description: "Selected as a fellow of Thinking About Thinking: a global community working across AI, neuroscience, mathematics, entrepreneurship and scientific discovery. Princeton, NJ, United States · Oct. 18, 2026.",
+      descriptionEs: "Seleccionado como fellow de Thinking About Thinking: una comunidad global que trabaja en IA, neurociencia, matemáticas, emprendimiento y descubrimiento científico. Princeton, NJ, Estados Unidos · 18 Oct. 2026.",
+      url: "https://www.thinkingaboutthinking.org/"
+    },
+    {
+      id: "aw-china-2026",
+      title: "Silver Award — China International College Students’ Innovation Competition (Spain Division)",
+      titleEs: "Premio de Plata — China International College Students’ Innovation Competition (División España)",
+      description: "Awarded in the Spain Division of the competition, organised by Tongji University, Nanjing University of Posts and Telecommunications, Shanghai Normal University and the Polytechnic University of Madrid. Madrid, Spain · Jul. 2, 2026.",
+      descriptionEs: "Galardonado en la División España del certamen, organizado por la Universidad de Tongji, Universidad de Correos y Telecomunicaciones de Nanjing, Universidad Normal de Shanghái y la Universidad Politécnica de Madrid. Madrid, España · 2 Jul. 2026.",
       url: "https://drive.google.com/file/d/1I6QwwILjX89qICHph4B0TOW6vkhy13Me/view?usp=sharing"
     },
     {
-      id: "aw-2",
-      title: "Development Bank of Latin America and the Caribbean (CAF) Scholarship for the Diploma in Governance and Public Innovation 2026",
-      titleEs: "Beca CAF - Banco de Desarrollo de América Latina y el Caribe para el Diplomado en Gobernabilidad e Innovación Pública 2026",
-      description: "Complutense University of Madrid.",
-      descriptionEs: "Universidad Complutense de Madrid."
+      id: "aw-glc-2024",
+      title: "Fifth Global Leadership Challenge — 2024",
+      titleEs: "Quinto Global Leadership Challenge — 2024",
+      description: "Selected for a programme with an approximately 1.82% acceptance rate, jointly organised by the University of Oxford and the St. Gallen Symposium. Online · Dec. 12–16, 2024.",
+      descriptionEs: "Seleccionado para un programa con una tasa de aceptación aproximada del 1,82%, organizado conjuntamente por la Universidad de Oxford y el St. Gallen Symposium. Online · 12–16 Dic. 2024.",
+      url: "https://www.leadership-challenge.org/past-glc-2024"
     },
     {
-      id: "aw-3",
-      title: "Global Leaders Cohort 2024",
-      titleEs: "Global Leaders Cohort 2024",
-      description: "Selected among the top 1.82% of candidates by the Social Sciences Division at Oxford University and the University of St. Gallen.",
-      descriptionEs: "Seleccionado entre el 1,82% superior de candidatos por la División de Ciencias Sociales de la Universidad de Oxford y la Universidad de St. Gallen.",
-      url: "https://www.leadership-challenge.org/about-glc"
-    },
-    {
-      id: "aw-4",
-      title: "Selected as an ambassador for the fourth cohort of the IPE Young Leaders Network",
-      titleEs: "Seleccionado como embajador de la cuarta edición de la Red de Jóvenes Líderes IPE",
-      description: "Peruvian Institute of Economics.",
-      descriptionEs: "Instituto Peruano de Economía (IPE).",
+      id: "aw-ipe-2024",
+      title: "IPE Young Leaders Network — Fourth Cohort",
+      titleEs: "Red de Jóvenes Líderes IPE — Cuarta Cohorte",
+      description: "Selected as one of 55 ambassadors from over 540 applicants across Peru for a programme organised by the Peruvian Institute of Economics. Lima, Peru · Jun. 26 – Nov. 29, 2024.",
+      descriptionEs: "Seleccionado como uno de los 55 embajadores entre más de 540 postulantes de todo el Perú para el programa organizado por el Instituto Peruano de Economía. Lima, Perú · 26 Jun. – 29 Nov. 2024.",
       url: "https://ipe.org.pe/presentamos-a-los-embajadores-de-la-red-de-jovenes-lideres-ipe-2024/"
     },
     {
-      id: "aw-5",
-      title: "Fellowship for the Energy Economics Summer School 2024",
-      titleEs: "Beca para la Escuela de Verano de Economía de la Energía 2024",
-      description: "Barcelona School of Economics.",
-      descriptionEs: "Barcelona School of Economics."
+      id: "aw-bse-2024",
+      title: "Energy Economics Summer School Fellowship - 2024",
+      titleEs: "Beca Energy Economics Summer School — 2024",
+      description: "Awarded a fellowship by Barcelona School of Economics for “Empirical Methods for the Analysis of the Energy Transition”, taught by Mar Reguant Ph.D. Barcelona, Spain · Jun. 17–21, 2024.",
+      descriptionEs: "Beneficiario de una beca otorgada por la Barcelona School of Economics para “Empirical Methods for the Analysis of the Energy Transition”, impartido por Mar Reguant, Ph.D. Barcelona, España · 17–21 Jun. 2024.",
+      url: "https://drive.google.com/file/d/1HOjLc9DloJa2rKDLKKPRrQYgee_k9e31/view?usp=sharing"
     },
     {
-      id: "aw-6",
-      title: "Fellowship for the Winter Methods School 2024: Measuring Citizen’s Digital Behaviours",
-      titleEs: "Beca para la Escuela de Métodos de Invierno 2024: Medición de Comportamientos Digitales de la Ciudadanía",
-      description: "Universitat Pompeu Fabra.",
-      descriptionEs: "Universitat Pompeu Fabra."
+      id: "aw-recsm-2024",
+      title: "Fifth RECSM Winter Methods School Fellowship - 2024",
+      titleEs: "Beca Quinta RECSM Winter Methods School — 2024",
+      description: "Awarded a fellowship by Universitat Pompeu Fabra - Research and Expertise Centre for Survey Methodology (RECSM) for “Measuring Citizen’s Digital Behaviours Using Web Trackers and Data Donations”, taught by Oriol Bosch Ph.D. Barcelona, Spain · Mar. 13–15, 2024.",
+      descriptionEs: "Beneficiario de una beca concedida por la Universitat Pompeu Fabra – Research and Expertise Centre for Survey Methodology (RECSM) para “Measuring Citizen’s Digital Behaviours Using Web Trackers and Data Donations”, impartido por Oriol Bosch, Ph.D. Barcelona, España · 13–15 Mar. 2024.",
+      url: "https://www.upf.edu/web/survey/recsm-winter-methods-school-2024"
     },
     {
-      id: "aw-7",
-      title: "In Altum Scholarship for the Law and Politics Summer School 2023",
-      titleEs: "Beca In Altum para la Escuela de Verano de Derecho y Política 2023",
-      description: "Organized by The Busch School of Business, The Catholic University of America.",
-      descriptionEs: "Organizado por The Busch School of Business, The Catholic University of America.",
-      url: "https://drive.google.com/file/d/1Uc3w0yB-_MBynU5pIP_Tdy3nQMgDLV4P/view?usp=sharing"
+      id: "aw-thesis-2024",
+      title: "Second Place — Ashok Kotwal Best Thesis Award",
+      titleEs: "Segundo Puesto — Premio Ashok Kotwal a la Mejor Tesis",
+      description: "Recognised for the thesis “A Bartik Approach to Estimating the Price Elasticity of Demand for Gasohol: Evidence from Lima, Peru”, co-authored with Yuri Solari Han. Lima, Peru · May 24, 2024.",
+      descriptionEs: "Reconocido por la tesis “A Bartik Approach to Estimating the Price Elasticity of Demand for Gasohol: Evidence from Lima, Peru”, coescrita con Yuri Solari Han. Lima, Perú · 24 May. 2024.",
+      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764"
     },
     {
-      id: "aw-8",
-      title: "Academic Performance Scholarship in 2023",
+      id: "aw-inaltum-2023",
+      title: "In Altum Scholarship — Law and Politics Summer School",
+      titleEs: "Beca In Altum — Escuela de Verano de Derecho y Política",
+      description: "Awarded a scholarship to attend the Law and Politics Summer School, organised by the Busch School of Business at The Catholic University of America. Washington D.C., United States · Jul. 11–16, 2023.",
+      descriptionEs: "Beca concedida para asistir a la Escuela de Verano de Derecho y Política, organizada por la Busch School of Business en The Catholic University of America. Washington D.C., Estados Unidos · 11–16 Jul. 2023.",
+      url: "https://drive.google.com/file/d/1Uc3w0yB-_MBynU5pIP_Tdy3nQMgDLV4P/view"
+    },
+    {
+      id: "aw-udep-2023",
+      title: "Academic Performance Scholarship 2023",
       titleEs: "Beca por Rendimiento Académico 2023",
-      description: "University of Piura.",
-      descriptionEs: "Universidad de Piura."
+      description: "Awarded a scholarship by the University of Piura in recognition of academic performance. Lima, Peru · Mar.–Jul. 2023.",
+      descriptionEs: "Beneficiario de una beca otorgada por la Universidad de Piura en reconocimiento al rendimiento académico. Lima, Perú · Mar.–Jul. 2023.",
+      url: "https://www.udep.edu.pe/"
     },
     {
-      id: "aw-9",
-      title: "Second Place — University of Piura Ashok Kotwal Best Thesis Award (2024)",
-      titleEs: "Segundo Puesto — Premio Ashok Kotwal a la Mejor Tesis de la Universidad de Piura (2024)",
-      description: "For the thesis 'A Bartik Approach to Estimating the Price Elasticity of Demand for Gasohol: Evidence from Lima, Peru.'",
-      descriptionEs: "Por la tesis 'A Bartik Approach to Estimating the Price Elasticity of Demand for Gasohol: Evidence from Lima, Peru.' (Enfoque Bartik para estimar la elasticidad precio de la demanda de gasohol: Evidencia en Lima, Perú)."
-    },
-    {
-      id: "aw-10",
-      title: "Second Place — CFA Institute Ethics Challenge Peru 2022",
-      titleEs: "Segundo Puesto — CFA Institute Ethics Challenge Perú 2022",
-      description: "Represented University of Piura for the CFA national competition for a business ethics case under the CFA Institute Code of Ethics and Standards of Professional Conduct.",
-      descriptionEs: "Representó a la Universidad de Piura en la competencia nacional de ética empresarial bajo el Código de Ética y Normas de Conducta Profesional de CFA Institute.",
+      id: "aw-cfa-2022",
+      title: "Second Place — CFA Institute Ethics Challenge Peru",
+      titleEs: "Segundo Puesto — CFA Institute Ethics Challenge Perú",
+      description: "Represented the University of Piura in the national competition organised by CFA Institute. Lima, Peru · Sept. 13, 2022.",
+      descriptionEs: "Representó a la Universidad de Piura en el certamen nacional organizado por el CFA Institute. Lima, Perú · 13 Sep. 2022.",
       url: "https://www.udep.edu.pe/hoy/2022/09/alumnos-de-economia-obtienen-el-2do-puesto-en-el-cfa-institute-ethics-challenge/"
     },
     {
-      id: "aw-11",
-      title: "E-Moot Libre Competencia 2022",
-      titleEs: "E-Moot Libre Competencia 2022",
-      description: "Semifinalist in the competition law moot organized by University of the Pacific and Bullard Falla Ezcurra+, an experience that helped lead to an internship at Bullard Falla Ezcurra+.",
-      descriptionEs: "Semifinalista en el moot de derecho de la competencia organizado por la Universidad del Pacífico y Bullard Falla Ezcurra+."
+      id: "aw-emoot-2022",
+      title: "Semifinalist — E-Moot Libre Competencia",
+      titleEs: "Semifinalista — E-Moot Libre Competencia",
+      description: "Reached the semifinals of the competition law moot organised by the University of the Pacific and Bullard Falla Ezcurra+. Lima, Peru · Aug. 3–6, 2022.",
+      descriptionEs: "Alcanzó las semifinales del concurso de derecho de la competencia organizado por la Universidad del Pacífico y Bullard Falla Ezcurra+. Lima, Perú · 3–6 Ago. 2022.",
+      url: "https://www.instagram.com/p/Cg0YBo1LAQV/?img_index=1"
     },
     {
-      id: "aw-12",
-      title: "Youth Parliamentarian 2019 representing the region of Piura",
-      titleEs: "Parlamentario Joven 2019 en representación de la región Piura",
-      description: "Congress of the Republic of Peru.",
-      descriptionEs: "Congreso de la República del Perú."
+      id: "aw-parliament-2019",
+      title: "Youth Parliamentarian — Piura",
+      titleEs: "Parlamentario Joven — Piura",
+      description: "Represented the region of Piura at the Regional Plenary, organised by the First Vice-Presidency of the Congress of the Republic of Peru and the Hanns Seidel Foundation. Piura, Peru · Aug. 22–23, 2019.",
+      descriptionEs: "Representó a la región Piura en el Plenario Regional, organizado por la Primera Vicepresidencia del Congreso de la República del Perú y la Fundación Hanns Seidel. Piura, Perú · 22–23 Ago. 2019.",
+      url: "https://drive.google.com/file/d/1cKGc20JYs-gAybYkZBbYzl_PfUyMfLHv/view?usp=sharing"
     }
   ] as AwardItem[]
 };

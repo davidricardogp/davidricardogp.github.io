@@ -243,9 +243,9 @@ const ENTITIES_KB: EntityItem[] = [
       'dad'
     ],
     answerEn:
-      'Dr. Jorge Ricardo Gonzales Castillo, Ph.D. (David’s Father & Research Mentor):\n\n• Profile: Doctor in Economics, Senior Professor and Principal Researcher at the Faculty of Economics, National University of Piura (UNP) in Peru.\n• Collaborative Research Papers:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship" (Sept. 2026)\n     Dr. Gonzales Castillo augmented the theoretical Ramsey-Cass-Koopmans growth framework by incorporating entrepreneurship as an endogenous factor to study its effects on economic growth.\n     Paper DOI: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     GitHub Repository: https://github.com/davidricardogp/Unpacking-Institutions\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n     Co-authored empirical industrial organization study using OSINERGMIN microdata to estimate fuel demand price elasticities and spatial competition.\n     Paper DOI: https://doi.org/10.21203/rs.3.rs-10995861/v1\n     GitHub Repository: https://github.com/davidricardogp/fuel-demand-lima-callao',
+      'Dr. Jorge Ricardo Gonzales Castillo, Ph.D. (David’s Father & Research Mentor):\n\n• Profile: Doctor in Economics, Senior Professor and Principal Researcher at the Faculty of Economics, National University of Piura (UNP) in Peru.\n• Collaborative Research Papers:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship" (Sept. 2026)\n     Dr. Gonzales Castillo augmented the theoretical Ramsey-Cass-Koopmans growth framework by incorporating entrepreneurship as an endogenous factor to study its effects on economic growth.\n     Paper DOI: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     GitHub Repository: https://github.com/davidricardogp/Unpacking-Institutions\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n     Co-authored empirical industrial organization study using OSINERGMIN microdata to estimate fuel demand price elasticities and spatial competition.\n     Paper DOI: https://www.researchsquare.com/article/rs-10995861/v2\n     GitHub Repository: https://github.com/davidricardogp/fuel-demand-lima-callao',
     answerEs:
-      'Dr. Jorge Ricardo Gonzales Castillo, Ph.D. (Padre de David Ricardo y Mentor de Investigación):\n\n• Perfil: Doctor en Economía, Profesor Principal e Investigador en la Facultad de Ciencias Económicas de la Universidad Nacional de Piura (UNP), Perú.\n• Papers e Investigaciones en coautoría:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship" (Sept. 2026)\n     El Dr. Gonzales Castillo amplió el modelo teórico de crecimiento de Ramsey-Cass-Koopmans incorporando el emprendimiento como factor endógeno para examinar sus efectos en el crecimiento económico.\n     Paper DOI: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     Repositorio GitHub: https://github.com/davidricardogp/Unpacking-Institutions\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n     Estudio microeconométrico en organización industrial que estima elasticidades precio de la demanda y competencia espacial entre estaciones de servicio en Lima y Callao con microdatos de OSINERGMIN.\n     Paper DOI: https://doi.org/10.21203/rs.3.rs-10995861/v1\n     Repositorio GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao'
+      'Dr. Jorge Ricardo Gonzales Castillo, Ph.D. (Padre de David Ricardo y Mentor de Investigación):\n\n• Perfil: Doctor en Economía, Profesor Principal e Investigador en la Facultad de Ciencias Económicas de la Universidad Nacional de Piura (UNP), Perú.\n• Papers e Investigaciones en coautoría:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship" (Sept. 2026)\n     El Dr. Gonzales Castillo amplió el modelo teórico de crecimiento de Ramsey-Cass-Koopmans incorporando el emprendimiento como factor endógeno para examinar sus efectos en el crecimiento económico.\n     Paper DOI: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     Repositorio GitHub: https://github.com/davidricardogp/Unpacking-Institutions\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n     Estudio microeconométrico en organización industrial que estima elasticidades precio de la demanda y competencia espacial entre estaciones de servicio en Lima y Callao con microdatos de OSINERGMIN.\n     Paper DOI: https://www.researchsquare.com/article/rs-10995861/v2\n     Repositorio GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao'
   },
   {
     keys: [
@@ -402,18 +402,95 @@ const ENTITIES_KB: EntityItem[] = [
       'Segundo Puesto — Premio Ashok Kotwal a la Mejor Tesis 2024 (Universidad de Piura):\n\n• Otorgado por su tesis de licenciatura: "A Bartik Approach to Estimating the Price Elasticity of Demand for Gasohol: Evidence from Lima, Peru."\n• Paper en SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n• Repositorio GitHub: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps'
   },
   {
-    keys: ['in altum', 'beca in altum', 'in altum scholarship'],
+    keys: ['in altum', 'inaltum', 'altum', 'beca in altum', 'in altum scholarship', 'in altum summer school', 'law and politics summer school', 'busch school', 'the busch school'],
     answerEn:
-      'In Altum Scholarship for the Law and Politics Summer School 2023:\n\n• Organized by The Busch School of Business, The Catholic University of America (Washington, D.C.).\n• Full competitive scholarship for international studies in law, political economy, and public institutions.\n• Certificate: https://drive.google.com/file/d/1Uc3w0yB-_MBynU5pIP_Tdy3nQMgDLV4P/view?usp=sharing',
+      'In Altum Scholarship for the Law and Politics Summer School 2023:\n\n• Program: Prestigious international scholarship initiative associated with The Busch School of Business at The Catholic University of America (Washington, D.C.).\n• Focus: Law, political economy, institutional frameworks, and public leadership.\n• Certificate: https://drive.google.com/file/d/1Uc3w0yB-_MBynU5pIP_Tdy3nQMgDLV4P/view?usp=sharing',
     answerEs:
-      'Beca In Altum para la Escuela de Verano de Derecho y Política 2023:\n\n• Organizada por The Busch School of Business, The Catholic University of America (Washington, D.C.).\n• Beca competitiva para estudios internacionales en derecho, economía política e instituciones públicas.\n• Certificado: https://drive.google.com/file/d/1Uc3w0yB-_MBynU5pIP_Tdy3nQMgDLV4P/view?usp=sharing'
+      'Beca In Altum para la Escuela de Verano de Derecho y Política 2023:\n\n• Programa: Convocatoria internacional de becas de excelencia académica organizada por The Busch School of Business en The Catholic University of America (Washington, D.C.).\n• Enfoque: Derecho, economía política, instituciones públicas y liderazgo cívico.\n• Certificado: https://drive.google.com/file/d/1Uc3w0yB-_MBynU5pIP_Tdy3nQMgDLV4P/view?usp=sharing'
   },
   {
-    keys: ['parlamentario joven', 'parlamento joven', 'youth parliamentarian'],
+    keys: ['slush', 'slush 2024', 'helsinki', 'slush helsinki'],
     answerEn:
-      'Youth Parliamentarian 2019 representing the region of Piura (Congress of the Republic of Peru):\n\n• Selected to represent the youth of the Piura region in the national parliamentary program, formulating and debating legislative initiatives.\n• Congress of Peru: https://www.congreso.gob.pe/',
+      'Slush 2024 (Helsinki, Finland · Nov. 20–21, 2024):\n\n• Overview: Slush is the world’s leading startup and technology gathering, bringing together 13,000+ founders, venture capitalists, and operators annually in Helsinki.\n• Participation: David Ricardo attended Slush 2024, connecting with European deep-tech founders and venture capital networks.\n• Official website: https://slush.org/',
     answerEs:
-      'Parlamentario Joven 2019 en representación de la región Piura (Congreso de la República del Perú):\n\n• Seleccionado para representar a la juventud de la región Piura en el programa de formación cívica y parlamentaria del Congreso del Perú, debatiendo iniciativas de ley.\n• Congreso de la República: https://www.congreso.gob.pe/'
+      'Slush 2024 (Helsinki, Finlandia · 20–21 de noviembre de 2024):\n\n• Descripción: Slush es el mayor evento mundial de startups e innovación tecnológica, congregando a más de 13.000 fundadores, fondos de capital de riesgo e inversores en Helsinki.\n• Participación: David Ricardo participó en Slush 2024, dialogando con fundadores de deep-tech y redes de venture capital europeas.\n• Sitio web oficial: https://slush.org/'
+  },
+  {
+    keys: ['ted', 'tedx', 'tedxiese', 'tedx iese', 'tedx iese 2026', 'charla ted'],
+    answerEn:
+      'TEDxIESE 2026 (Barcelona, Spain · Feb. 6, 2026):\n\n• Session: "Do successful companies quietly kill innovation?" by Dr. Josemaria Siota.\n• Focus: Innovation dynamics, corporate inertia, and mechanisms for structural renewal in incumbent firms.\n• Official website: https://www.tedxiese.com/',
+    answerEs:
+      'TEDxIESE 2026 (Barcelona, España · 6 de febrero de 2026):\n\n• Sesión: "Do successful companies quietly kill innovation?" ("¿Matan silenciosamente la innovación las empresas exitosas?") impartida por el Dr. Josemaria Siota.\n• Enfoque: Dinámicas de innovación, inercia corporativa y renovación estratégica en organizaciones consolidadas.\n• Sitio web oficial: https://www.tedxiese.com/'
+  },
+  {
+    keys: ['mobile world congress', 'mobile world congres', 'mwc', 'mwc 2026', 'mwc barcelona', 'the sovereignty frontier'],
+    answerEn:
+      'Mobile World Congress 2026 (MWC Barcelona · Mar. 3, 2026):\n\n• Overview: The largest and most influential connectivity, mobile, and digital ecosystem congress globally, organized by GSMA in Barcelona.\n• Session: "The Sovereignty Frontier: Scaling Europe’s Strategic Tech" by Dr. Josemaria Siota (IESE Business School).\n• Session agenda: https://www.mwcbarcelona.com/agenda/sessions/5845-the-sovereignty-frontier-scaling-europes-strategic-tech',
+    answerEs:
+      'Mobile World Congress 2026 (MWC Barcelona · 3 de marzo de 2026):\n\n• Descripción: El mayor congreso del mundo sobre telecomunicaciones, conectividad e innovación tecnológica, organizado anualmente por la GSMA en Barcelona.\n• Sesión: "The Sovereignty Frontier: Scaling Europe’s Strategic Tech" a cargo del Dr. Josemaria Siota (IESE Business School).\n• Enlace de la sesión: https://www.mwcbarcelona.com/agenda/sessions/5845-the-sovereignty-frontier-scaling-europes-strategic-tech'
+  },
+  {
+    keys: ['4yfn', '4yfn barcelona', '4yfn 2024', 'four years from now'],
+    answerEn:
+      '4YFN Barcelona 2024 (Barcelona, Spain · Feb. 26–29, 2024):\n\n• Overview: Four Years From Now (4YFN) is the premier global startup platform of GSMA Mobile World Congress (MWC) Barcelona, showcasing breakthrough digital ventures.\n• Official link: https://emprenedoria.barcelonactiva.cat/es/4yfn24',
+    answerEs:
+      '4YFN Barcelona 2024 (Barcelona, España · 26–29 de febrero de 2024):\n\n• Descripción: 4YFN (Four Years From Now) es la plataforma de startups e innovación del Mobile World Congress en Barcelona, dedicada a conectar emprendimientos deep-tech con inversores globales.\n• Enlace oficial: https://emprenedoria.barcelonactiva.cat/es/4yfn24'
+  },
+  {
+    keys: ['hangar 51', 'hangar 51 accelerator', 'hangar51', 'iag accelerator', 'iag'],
+    answerEn:
+      'Hangar 51 Accelerator 2024 (London, UK · Nov. 27, 2024):\n\n• Overview: The global corporate innovation accelerator program created by International Airlines Group (IAG — British Airways, Iberia, Vueling, Aer Lingus) to scale aviation and logistics tech.\n• Event Link: https://www.linkedin.com/posts/plug-and-play-uk_the-8th-edition-of-iags-hangar-51-accelerator-activity-7270767020621578240-BkvC',
+    answerEs:
+      'Hangar 51 Accelerator 2024 (Londres, Reino Unido · 27 de noviembre de 2024):\n\n• Descripción: Aceleradora global de innovación del International Airlines Group (IAG — British Airways, Iberia, Vueling, Aer Lingus), que colabora con scaleups disruptivas en aviación y sostenibilidad.\n• Enlace del evento: https://www.linkedin.com/posts/plug-and-play-uk_the-8th-edition-of-iags-hangar-51-accelerator-activity-7270767020621578240-BkvC'
+  },
+  {
+    keys: ['github universe', 'github universe 2026'],
+    answerEn:
+      'GitHub Universe 2026 (Online · Oct. 28–29, 2026):\n\n• Overview: GitHub’s annual flagship developer and AI conference, presenting breakthroughs in AI tools, software engineering, and open source.\n• Official website: https://githubuniverse.com/',
+    answerEs:
+      'GitHub Universe 2026 (Online · 28–29 de octubre de 2026):\n\n• Descripción: Encuentro global insignia de GitHub enfocado en herramientas de desarrollo con inteligencia artificial, ingeniería de software y open source.\n• Sitio web oficial: https://githubuniverse.com/'
+  },
+  {
+    keys: ['ae global summit', 'algopreneurship', 'open problems in ai', 'ae summit'],
+    answerEn:
+      'The AE Global Summit 2026: Open Problems in AI (London, United Kingdom · Wed. 25 – Fri. 27 Nov. 2026):\n\n• Overview: International AI and entrepreneurship summit organized by Algopreneurship in London, UK.\n• Sessions: "AI Research Breakthroughs", "AI × Enterprise", and "AI × Entrepreneurship".\n• Official website: https://www.algopreneurship.org/',
+    answerEs:
+      'The AE Global Summit 2026: Open Problems in AI (Londres, Reino Unido · Mié. 25 – Vie. 27 de noviembre de 2026):\n\n• Descripción: Cumbre internacional sobre problemas abiertos en inteligencia artificial y emprendimiento organizada por Algopreneurship en Londres, Reino Unido.\n• Sesiones: "AI Research Breakthroughs", "AI × Enterprise" y "AI × Entrepreneurship".\n• Sitio web oficial: https://www.algopreneurship.org/'
+  },
+  {
+    keys: ['thinking about thinking', 'that', 'that fellowship'],
+    answerEn:
+      'Thinking About Thinking (ThAT) — Fellow (Princeton, NJ · 2026–Present):\n\n• Overview: ThAT is a nonprofit organisation that brings together a global community working across AI, entrepreneurship, neuroscience, mathematics, and scientific discovery.\n• Award: David was awarded the Thinking About Thinking cohort fellowship 2026.\n• Official website: https://www.thinkingaboutthinking.org/',
+    answerEs:
+      'Thinking About Thinking (ThAT) — Fellow (Princeton, NJ · 2026–Actualidad):\n\n• Descripción: ThAT es una organización sin fines de lucro que reúne a una comunidad global interdisciplinaria en inteligencia artificial, emprendimiento, neurociencia, matemáticas y descubrimiento científico.\n• Beca: David obtuvo la beca de la cohorte Thinking About Thinking 2026 (ThAT cohort fellowship).\n• Sitio web oficial: https://www.thinkingaboutthinking.org/'
+  },
+  {
+    keys: ['julio velarde', 'velarde', 'casona pardo', 'encuentro de economistas', 'encuentro bcrp', 'xl encuentro', 'entrevista julio velarde', 'bcrp inflacion'],
+    answerEn:
+      'Interviewer — XL Encuentro de Economistas del BCRP (Oct. 25, 2022):\n\n• Venue: Casona Pardo (Historic landmark in Lima, Peru: https://es.wikipedia.org/wiki/Casona_Pardo).\n• Role: Interviewed Julio Velarde, Ph.D. (President of the Central Reserve Bank of Peru, BCRP: https://www.bcrp.gob.pe/sobre-el-bcrp/organizacion/directorio/julio-velarde.html), focusing on inflation dynamics and macroeconomic stabilization in Peru.\n• UDEP News Coverage: https://www.udep.edu.pe/hoy/2022/11/campus-lima-y-casona-pardo-albergaron-xl-encuentro-de-economistas-de-bcrp/',
+    answerEs:
+      'Entrevistador — XL Encuentro de Economistas del BCRP (25 de octubre de 2022):\n\n• Lugar: Casona Pardo (Monumento histórico en Lima, Perú: https://es.wikipedia.org/wiki/Casona_Pardo).\n• Rol: Entrevistó al Dr. Julio Velarde (Presidente del Banco Central de Reserva del Perú, BCRP: https://www.bcrp.gob.pe/sobre-el-bcrp/organizacion/directorio/julio-velarde.html), abordando la inflación en el Perú y la política monetaria.\n• Noticia oficial en UDEP: https://www.udep.edu.pe/hoy/2022/11/campus-lima-y-casona-pardo-albergaron-xl-encuentro-de-economistas-de-bcrp/'
+  },
+  {
+    keys: ['ecotalks', 'eco talks', 'entre economistas', 'centro cultural los andes', 'conversatorio carpio'],
+    answerEn:
+      'Speaker — EcoTalks (Entre Economistas · May 7, 2022):\n\n• Venue: University of Piura · Los Andes University Cultural Center (Lima, Peru).\n• Role: Speaker discussing fundamental economic principles, market institutions, and economic challenges with economics students, alongside Miguel Ángel Carpio, Ph.D.\n• Event Link / Drive: https://drive.google.com/file/d/1k7CIEhFWrfKKa_q03IHGvuCvUoma_ZoV/view?usp=drive_link',
+    answerEs:
+      'Ponente — EcoTalks (Entre Economistas · 7 de mayo de 2022):\n\n• Lugar: Universidad de Piura · Centro Cultural Universitario Los Andes (Lima, Perú).\n• Rol: Ponente en conversatorio sobre principios económicos fundamentales, instituciones de mercado y coyuntura económica con estudiantes de economía, junto al Dr. Miguel Ángel Carpio.\n• Enlace del evento / Drive: https://drive.google.com/file/d/1k7CIEhFWrfKKa_q03IHGvuCvUoma_ZoV/view?usp=drive_link'
+  },
+  {
+    keys: ['substack', 'blog personal', 'personal blog', 'davidricardogp substack'],
+    answerEn:
+      'David’s personal blog is on Substack:\nhttps://davidricardogp.substack.com/\n\nWhere he writes analytical essays on institutional economics, technology transfer, and startup policy.',
+    answerEs:
+      'El blog personal de David está en Substack:\nhttps://davidricardogp.substack.com/\n\nDonde publica ensayos de divulgación y análisis sobre economía institucional, transferencia tecnológica y políticas de emprendimiento.'
+  },
+  {
+    keys: ['parlamentario joven', 'parlamento joven', 'youth parliamentarian', 'hanns seidel'],
+    answerEn:
+      'Youth Parliamentarian 2019 representing the region of Piura (Congress of the Republic of Peru):\n\n• Participation as Youth Parliamentarian for the Regional Plenary of Piura (August 22–23, 2019), organized by the First Vice-Presidency of the Congress of the Republic of Peru and Hanns Seidel Foundation.\n• Congress of Peru: https://www.congreso.gob.pe/\n• Hanns Seidel Foundation: https://www.hss.de/en/',
+    answerEs:
+      'Parlamentario Joven 2019 en representación de la región Piura (Congreso de la República del Perú):\n\n• Participación como Parlamentario Joven en el Plenario Regional de Piura (22 y 23 de agosto de 2019), organizado por la Primera Vicepresidencia del Congreso de la República del Perú y la Fundación Hanns Seidel.\n• Congreso de la República: https://www.congreso.gob.pe/\n• Fundación Hanns Seidel: https://www.hss.de/en/'
   }
 ];
 
@@ -428,16 +505,16 @@ const SPECIFIC_PAPERS_KB: EntityItem[] = [
   {
     keys: ['fuel demand', 'gasohol retailing', 'spatial competition', 'osinergmin', 'demanda de gasohol', 'mercados minoristas de combustibles'],
     answerEn:
-      'Working Paper:\n"Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n• Authors: David Ricardo Gonzales Peña & Jorge Ricardo Gonzales Castillo Ph.D.\n• Summary: A microeconometric empirical study of retail fuel markets analyzing the price elasticity of demand for 90- and 95-octane gasohol and local spatial competition in Lima and Callao using granular administrative transaction data from OSINERGMIN (-1.50 for 90-octane and -2.20 for 95-octane across the full sample).\n• JEL: L11, L81, D12, R41, Q41\n• Paper DOI: https://doi.org/10.21203/rs.3.rs-10995861/v1\n• GitHub Repository: https://github.com/davidricardogp/fuel-demand-lima-callao',
+      'Working Paper:\n"Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n• Authors: David Ricardo Gonzales Peña & Jorge Ricardo Gonzales Castillo Ph.D.\n• Summary: A microeconometric empirical study of retail fuel markets analyzing the price elasticity of demand for 90- and 95-octane gasohol and local spatial competition in Lima and Callao using granular administrative transaction data from OSINERGMIN (-1.50 for 90-octane and -2.20 for 95-octane across the full sample).\n• JEL: L11, L81, D12, R41, Q41\n• Paper DOI: https://www.researchsquare.com/article/rs-10995861/v2\n• GitHub Repository: https://github.com/davidricardogp/fuel-demand-lima-callao',
     answerEs:
-      'Documento de Trabajo:\n"Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n• Autores: David Ricardo Gonzales Peña y Dr. Jorge Ricardo Gonzales Castillo\n• Resumen: Investigación empírica microeconométrica en organización industrial sobre la elasticidad precio de la demanda de gasohol de 90 y 95 octanos y competencia espacial entre estaciones de servicio en Lima y Callao usando microdatos administrativos de OSINERGMIN (-1,50 para 90 octanos y -2,20 para 95 octanos).\n• JEL: L11, L81, D12, R41, Q41\n• Paper DOI: https://doi.org/10.21203/rs.3.rs-10995861/v1\n• Repositorio GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao'
+      'Documento de Trabajo:\n"Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao" (Sept. 2026)\n• Autores: David Ricardo Gonzales Peña y Dr. Jorge Ricardo Gonzales Castillo\n• Resumen: Investigación empírica microeconométrica en organización industrial sobre la elasticidad precio de la demanda de gasohol de 90 y 95 octanos y competencia espacial entre estaciones de servicio en Lima y Callao usando microdatos administrativos de OSINERGMIN (-1,50 para 90 octanos y -2,20 para 95 octanos).\n• JEL: L11, L81, D12, R41, Q41\n• Paper DOI: https://www.researchsquare.com/article/rs-10995861/v2\n• Repositorio GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao'
   },
   {
-    keys: ['bartik', 'bartik approach', 'tesis', 'thesis', 'ashok kotwal'],
+    keys: ['bartik', 'bartik approach', 'tesis', 'thesis', 'ashok kotwal', 'solari han', 'yuri solari'],
     answerEn:
-      'Working Paper / Thesis:\n"Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru" (Apr. 2024)\n• Authors: David Ricardo Gonzales Peña & Y. Solari\n• Honors: 2nd Place Ashok Kotwal Best Thesis Award (University of Piura, 2024)\n• Summary: Implements a novel Bartik shift-share instrumental-variable approach using spatial transaction data from OSINERGMIN to estimate price elasticity of demand while controlling for price endogeneity.\n• JEL: C26, D12, L71, Q41\n• SSRN Paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n• GitHub Repository: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps',
+      'Working Paper / Thesis:\n"Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru" (Apr. 2024)\n• Authors: David Ricardo Gonzales Peña & Yuri Solari Han\n• Honors: 2nd Place Ashok Kotwal Best Thesis Award (University of Piura, 2024)\n• Summary: Implements a novel Bartik shift-share instrumental-variable approach using spatial transaction data from OSINERGMIN to estimate price elasticity of demand while controlling for price endogeneity.\n• JEL: C26, D12, L71, Q41\n• SSRN Paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n• GitHub Repository: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps',
     answerEs:
-      'Documento de Trabajo / Tesis:\n"Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru" (Abr. 2024)\n• Autores: David Ricardo Gonzales Peña y Y. Solari\n• Reconocimiento: 2º puesto en el Premio Ashok Kotwal a la Mejor Tesis (Universidad de Piura, 2024)\n• Resumen: Aplica por primera vez variables instrumentales tipo Bartik con microdatos espaciales de OSINERGMIN para estimar la elasticidad precio de la demanda de combustible y corregir sesgos de endogeneidad.\n• JEL: C26, D12, L71, Q41\n• SSRN Paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n• Repositorio GitHub: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps'
+      'Documento de Trabajo / Tesis:\n"Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru" (Abr. 2024)\n• Autores: David Ricardo Gonzales Peña y Yuri Solari Han\n• Reconocimiento: 2º puesto en el Premio Ashok Kotwal a la Mejor Tesis (Universidad de Piura, 2024)\n• Resumen: Aplica por primera vez variables instrumentales tipo Bartik con microdatos espaciales de OSINERGMIN para estimar la elasticidad precio de la demanda de combustible y corregir sesgos de endogeneidad.\n• JEL: C26, D12, L71, Q41\n• SSRN Paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n• Repositorio GitHub: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps'
   },
   {
     keys: ['dynamic and stochastic optimization', 'optimizacion dinamica', 'stochastic optimization', 'monografia', 'monograph', 'libro de optimizacion', 'kdp'],
@@ -496,12 +573,17 @@ const KNOWLEDGE_BASE_EN: KnowledgeItem[] = [
   {
     keys: ['papers', 'publications', 'working paper', 'published', 'articles', 'reports', 'doi', 'ssrn', 'publicaciones'],
     answer:
-      'David’s research publications and working papers with links:\n\n• Working Papers:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship"\n     Paper: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     GitHub: https://github.com/davidricardogp/Unpacking-Institutions\n\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao"\n     Paper: https://doi.org/10.21203/rs.3.rs-10995861/v1\n     GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao\n\n  3. "Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru"\n     SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n     GitHub: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps\n\n• Academic Monograph:\n  "Dynamic and Stochastic Optimization in Economics" (KDP, 2026): https://www.amazon.com/dp/B0H7RQ2HCB\n\n• Policy Reports (EIC Scaling Club & IESE):\n  1. Corporate Venturing Ecosystem: https://doi.org/10.15581/018/79057\n  2. Scaleup Financing: https://doi.org/10.15581/018/79055'
+      'David’s research publications and working papers with links:\n\n• Working Papers:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship"\n     Paper: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     GitHub: https://github.com/davidricardogp/Unpacking-Institutions\n\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao"\n     Paper: https://www.researchsquare.com/article/rs-10995861/v2\n     GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao\n\n  3. "Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru"\n     SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n     GitHub: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps\n\n• Academic Monograph:\n  "Dynamic and Stochastic Optimization in Economics" (KDP, 2026): https://www.amazon.com/dp/B0H7RQ2HCB\n\n• Policy Reports (EIC Scaling Club & IESE):\n  1. Corporate Venturing Ecosystem: https://doi.org/10.15581/018/79057\n  2. Scaleup Financing: https://doi.org/10.15581/018/79055'
   },
   {
     keys: ['book', 'monograph', 'dynamic', 'stochastic', 'optimization', 'amazon', 'kdp', 'julia', 'python'],
     answer:
       'David is the author of the academic monograph:\n\n"Dynamic and Stochastic Optimization in Economics" (Kindle Direct Publishing, 2026).\nBased on course lecture notes and theoretical problem sets, accompanied by computational replication algorithms in Python and Julia.\n\nAmazon link: https://www.amazon.com/dp/B0H7RQ2HCB'
+  },
+  {
+    keys: ['substack', 'personal blog', 'blog personal', 'substack blog'],
+    answer:
+      'David’s personal blog on Substack is:\nhttps://davidricardogp.substack.com/\n\nWhere he writes analytical essays on institutional economics, technology transfer, and startup policy.'
   },
   {
     keys: ['public writing', 'essays', 'blog', 'writing', 'opinion', 'gobierno', 'formalizar', 'diario'],
@@ -511,7 +593,7 @@ const KNOWLEDGE_BASE_EN: KnowledgeItem[] = [
   {
     keys: ['affiliations', 'community', 'cohort', 'member', 'network', 'fellow'],
     answer:
-      'David’s professional affiliations and community memberships:\n\n• Peruvian Institute of Economics (IPE) — Ambassador, Young Leaders Network (2024–Present): https://ipe.org.pe/\n• Global Leaders Cohort 2024 (2024–Present, Oxford, UK) — Member of the cohort organized by Oxford University and University of St. Gallen: https://www.leadership-challenge.org/about-glc\n• WAPOR Latinoamérica — Chapter Member (2024–Present): https://waporlatinoamerica.org/'
+      'David’s professional affiliations and community memberships:\n\n• Thinking About Thinking (ThAT) — Fellow (2026–Present, Princeton, NJ): https://www.thinkingaboutthinking.org/\n• Peruvian Institute of Economics (IPE) — Ambassador, Young Leaders Network (2024–Present): https://ipe.org.pe/\n• Global Leaders Cohort 2024 (2024–Present, Oxford, UK) — Member of the cohort organized by Oxford University and University of St. Gallen: https://www.leadership-challenge.org/about-glc\n• WAPOR Latinoamérica — Chapter Member (2024–Present): https://waporlatinoamerica.org/'
   },
   {
     keys: ['experience', 'work', 'worked', 'job', 'career', 'employment', 'roles', 'history', 'trayectoria'],
@@ -526,22 +608,22 @@ const KNOWLEDGE_BASE_EN: KnowledgeItem[] = [
   {
     keys: ['education', 'degree', 'degrees', 'academics', 'credentials', 'bachelor', 'undergraduate', 'school'],
     answer:
-      'Education and academic credentials:\n• B.Sc. in Economics from University of Piura (Peru, 2019–2024), University Cloister member and student delegate.\n• International academic exchanges at Diego Portales University (Chile) and Universitat Pompeu Fabra (Barcelona).\n• Complementary Education:\n  - IESE Business School (Predoctoral coursework, Barcelona, Spain, 2026)\n  - CAF & Complutense University of Madrid (Diploma in Governance and Public Innovation, 2026)\n  - EuroTeQ Ignite Bootcamp (IESE, 2026)\n  - World Bank Group Youth Summit (Behavioral Science in Public Policy, 2025)\n  - Oxford University — The Oxford Character Project (Leading with Character, 2025)\n  - Barcelona School of Economics (Energy Economics, 2024)\n  - Pompeu Fabra University (Measuring Citizen’s Digital Behaviours, 2024)\n  - The Catholic University of America (Law and Politics, 2023)\n  - Center for Research in Experimental Economics - CREE (2023): https://www.udep.edu.pe/cree/\n  - UNAM (Anthony Thirlwall Development Economics, 2021): https://res.org.uk/newsletter/obituary-tony-thirlwall/'
+      'Education and academic credentials:\n• B.Sc. in Economics from University of Piura (Peru, 2019–2024), University Cloister member and student delegate.\n• International academic exchanges at Diego Portales University (Chile) and Universitat Pompeu Fabra (Barcelona).\n• Complementary Education:\n  - IESE Business School (Predoctoral coursework, Barcelona, Spain, 2026)\n  - CAF & Complutense University of Madrid (Diploma in Governance and Public Innovation, 2026)\n  - EuroTeQ Ignite Bootcamp (IESE, 2026)\n  - World Bank Group Youth Summit (Behavioral Science in Public Policy, 2025)\n  - Oxford University — The Oxford Character Project (Leading with Character, 2025)\n  - Barcelona School of Economics (Energy Economics Summer School 2024, Mar Reguant): https://bse.eu/\n  - Universitat Pompeu Fabra (5th RECSM Winter Methods School 2024, Mariano Torcal): https://www.upf.edu/web/recsm\n  - The Catholic University of America (Law and Politics, 2023)\n  - Center for Research in Experimental Economics - CREE (2023): https://www.udep.edu.pe/cree/\n  - UNAM (Anthony Thirlwall Development Economics, 2021): https://res.org.uk/newsletter/obituary-tony-thirlwall/'
   },
   {
     keys: ['awards', 'fellowship', 'recognition', 'scholarship', 'prize', 'silver', 'honors', 'competition', 'thesis award'],
     answer:
-      'Key honors and awards:\n• Silver Award at the China International College Students’ Innovation Competition 2026 (Spain Division)\n• CAF Scholarship for Diploma in Governance and Public Innovation (Complutense University of Madrid)\n• Global Leaders Cohort 2024 (Oxford & St. Gallen, top 1.82%)\n• Ambassador for the IPE Young Leaders Network\n• 2nd Place Ashok Kotwal Best Thesis Award (2024)\n• 2nd Place CFA Institute Ethics Challenge Peru (2022)\n• Fellowships from BSE, UPF, and The Catholic University of America.'
+      'Key honors and awards:\n• Thinking About Thinking Cohort Fellowship 2026 (ThAT, Princeton, NJ): https://www.thinkingaboutthinking.org/\n• Silver Award at the China International College Students’ Innovation Competition 2026 (Spain Division)\n• CAF Scholarship for Diploma in Governance and Public Innovation (Complutense University of Madrid)\n• Global Leaders Cohort 2024 (Oxford & St. Gallen, top 1.82%)\n• Ambassador for the IPE Young Leaders Network\n• 2nd Place Ashok Kotwal Best Thesis Award (2024, University of Piura): https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n• 2nd Place CFA Institute Ethics Challenge Peru (2022)\n• Semifinalist E-Moot Libre Competencia 2022: https://www.instagram.com/p/Cg0YBo1LAQV/?img_index=1\n• Youth Parliamentarian 2019 representing Piura (Congress of Peru)\n• Fellowships from BSE (Energy Economics) and UPF / RECSM (Winter Methods School).'
   },
   {
-    keys: ['talk', 'talks', 'presentation', 'conference', 'conferences', 'congress', 'congresses', 'forum', 'speech', 'speaker', 'host', '4yfn', 'slush', 'mwc', 'tedx', 'github universe'],
+    keys: ['talk', 'talks', 'presentation', 'conference', 'conferences', 'congress', 'congresses', 'forum', 'speech', 'speaker', 'host', '4yfn', 'slush', 'mwc', 'tedx', 'github universe', 'ae global summit'],
     answer:
-      'Academic talks, congresses, and presentations:\n\n• Congresses & Conferences:\n  1. GitHub Universe 2026 (Online · Oct. 2026): https://githubuniverse.com/\n  2. Mobile World Congress 2026 (Barcelona · Mar. 2026) — Session: The Sovereignty Frontier: Scaling Europe’s Strategic Tech by Josemaria Siota: https://www.mwcbarcelona.com/agenda/sessions/5845-the-sovereignty-frontier-scaling-europes-strategic-tech\n  3. TEDxIESE 2026 (Barcelona · Feb. 2026) — Session: Do successful companies quietly kill innovation? by Josemaria Siota: https://www.tedxiese.com/\n  4. Hangar 51 Accelerator 2024 (London · Nov. 2024): https://www.iaginnovation.com/hangar-51/\n  5. Slush 2024 (Helsinki · Nov. 2024): https://slush.org/\n  6. 4YFN Barcelona 2024 (Barcelona · Feb. 2024): https://www.4yfn.com/\n\n• Talks & Guest Lectures:\n  • Guest Lecture on Entrepreneurship Fundamentals at National University of Piura (Sept. 2026)\n  • Host of the IESE Entrepreneurship & Innovation Center meeting on living labs with Dr. Fernando Fernandez (May 2026)\n  • Speaker at XIX Investment Forum (PAD & Hub UDEP) on European startup policymaking (Aug. 2025)\n  • Speaker at Hub UDEP on smarter startup ecosystems (Aug. 2025).'
+      'Academic talks, congresses, and presentations:\n\n• Congresses & Conferences:\n  1. The AE Global Summit 2026: Open Problems in AI (London · Nov. 2026): https://www.algopreneurship.org/\n  2. GitHub Universe 2026 (Online · Oct. 2026): https://githubuniverse.com/\n  3. Mobile World Congress 2026 (Barcelona · Mar. 2026) — Session: The Sovereignty Frontier by Josemaria Siota: https://www.mwcbarcelona.com/agenda/sessions/5845-the-sovereignty-frontier-scaling-europes-strategic-tech\n  4. TEDxIESE 2026 (Barcelona · Feb. 2026) — Session: Do successful companies quietly kill innovation? by Josemaria Siota: https://www.tedxiese.com/\n  5. Hangar 51 Accelerator 2024 (London · Nov. 2024): https://www.linkedin.com/posts/plug-and-play-uk_the-8th-edition-of-iags-hangar-51-accelerator-activity-7270767020621578240-BkvC\n  6. Slush 2024 (Helsinki · Nov. 2024): https://slush.org/\n  7. 4YFN Barcelona 2024 (Barcelona · Feb. 2024): https://emprenedoria.barcelonactiva.cat/es/4yfn24\n\n• Talks & Guest Lectures:\n  • Guest Lecture on Entrepreneurship Fundamentals at National University of Piura (Sept. 2026)\n  • Host of the IESE Entrepreneurship & Innovation Center meeting on living labs with Dr. Fernando Fernandez (May 2026)\n  • Speaker at XIX Investment Forum (PAD & Hub UDEP) on European startup policymaking (Aug. 2025)\n  • Speaker at Hub UDEP on smarter startup ecosystems (Aug. 2025)\n  • Interviewer at XL Encuentro de Economistas del BCRP interviewing Dr. Julio Velarde on inflation (Casona Pardo, Oct. 2022)\n  • Speaker at EcoTalks (Entre Economistas) at University of Piura alongside Miguel Ángel Carpio, Ph.D. (May 2022).'
   },
   {
     keys: ['cv', 'resume', 'curriculum', 'download'],
     answer:
-      'You can inspect or download his Curriculum Vitae by clicking the "Curriculum Vitae" button in the navigation bar or header.'
+      'You can inspect or download his CV by clicking the "CV" button in the bio header.'
   },
   {
     keys: ['peru', 'born', 'grew up', 'from', 'origin'],
@@ -584,12 +666,17 @@ const KNOWLEDGE_BASE_ES: KnowledgeItem[] = [
   {
     keys: ['papers', 'publicaciones', 'working paper', 'articulos', 'informes', 'doi', 'ssrn', 'publicacion'],
     answer:
-      'Publicaciones de investigación y working papers de David con enlaces:\n\n• Documentos de Trabajo:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship"\n     Paper: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     GitHub: https://github.com/davidricardogp/Unpacking-Institutions\n\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao"\n     Paper: https://doi.org/10.21203/rs.3.rs-10995861/v1\n     GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao\n\n  3. "Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru"\n     SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n     GitHub: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps\n\n• Monografía Académica:\n  "Dynamic and Stochastic Optimization in Economics" (KDP, 2026): https://www.amazon.com/dp/B0H7RQ2HCB\n\n• Informes de Política (EIC Scaling Club e IESE):\n  1. Corporate Venturing Ecosystem: https://doi.org/10.15581/018/79057\n  2. Scaleup Financing: https://doi.org/10.15581/018/79055'
+      'Publicaciones de investigación y working papers de David con enlaces:\n\n• Documentos de Trabajo:\n  1. "Unpacking Institutions: How Governance Quality Moderates the Entrepreneurship-Growth Relationship"\n     Paper: https://doi.org/10.21203/rs.3.rs-10995280/v1\n     GitHub: https://github.com/davidricardogp/Unpacking-Institutions\n\n  2. "Fuel Demand, Spatial Competition, and Local Market Structure: Evidence from Gasohol Retailing in Lima and Callao"\n     Paper: https://www.researchsquare.com/article/rs-10995861/v2\n     GitHub: https://github.com/davidricardogp/fuel-demand-lima-callao\n\n  3. "Bartik Approach for Estimating the Price Elasticity of Demand for Gasohol: Lima, Peru"\n     SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n     GitHub: https://github.com/davidricardogp/Bartik_Elasticity_of_Demand_Approach_GIS_API_GoogleMaps\n\n• Monografía Académica:\n  "Dynamic and Stochastic Optimization in Economics" (KDP, 2026): https://www.amazon.com/dp/B0H7RQ2HCB\n\n• Informes de Política (EIC Scaling Club e IESE):\n  1. Corporate Venturing Ecosystem: https://doi.org/10.15581/018/79057\n  2. Scaleup Financing: https://doi.org/10.15581/018/79055'
   },
   {
     keys: ['libro', 'libros', 'monografia', 'optimizacion', 'dinamica', 'estocastica', 'amazon', 'kdp', 'julia', 'python'],
     answer:
       'David es autor de la monografía académica:\n\n"Dynamic and Stochastic Optimization in Economics" (Kindle Direct Publishing, 2026).\nBasada en apuntes de clase y ejercicios teóricos, acompañada de algoritmos de replicación computacional en Python y Julia.\n\nEnlace en Amazon: https://www.amazon.com/dp/B0H7RQ2HCB'
+  },
+  {
+    keys: ['substack', 'blog personal', 'personal blog', 'blog de substack'],
+    answer:
+      'El blog personal de David en Substack es:\nhttps://davidricardogp.substack.com/\n\nDonde publica ensayos sobre economía institucional, transferencia tecnológica y diseño de políticas de emprendimiento.'
   },
   {
     keys: ['articulos', 'ensayos', 'opinion', 'gobierno', 'formalizar', 'blog', 'escritos', 'public writing'],
@@ -599,7 +686,7 @@ const KNOWLEDGE_BASE_ES: KnowledgeItem[] = [
   {
     keys: ['afiliado', 'afiliaciones', 'comunidad', 'organizaciones', 'miembro', 'red'],
     answer:
-      'Afiliaciones y membresías profesionales de David:\n\n• Instituto Peruano de Economía (IPE) — Embajador de la Red de Jóvenes Líderes (2024–Actualidad): https://ipe.org.pe/\n• Global Leaders Cohort 2024 (2024–Actualidad, Oxford, UK) — Miembro del programa organizado por la Universidad de Oxford y la Universidad de St. Gallen: https://www.leadership-challenge.org/about-glc\n• WAPOR Latinoamérica — Miembro del capítulo regional (2024–Actualidad): https://waporlatinoamerica.org/'
+      'Afiliaciones y membresías profesionales de David:\n\n• Thinking About Thinking (ThAT) — Fellow (2026–Actualidad, Princeton, NJ): https://www.thinkingaboutthinking.org/\n• Instituto Peruano de Economía (IPE) — Embajador de la Red de Jóvenes Líderes (2024–Actualidad): https://ipe.org.pe/\n• Global Leaders Cohort 2024 (2024–Actualidad, Oxford, UK) — Miembro del programa organizado por la Universidad de Oxford y la Universidad de St. Gallen: https://www.leadership-challenge.org/about-glc\n• WAPOR Latinoamérica — Miembro del capítulo regional (2024–Actualidad): https://waporlatinoamerica.org/'
   },
   {
     keys: ['experiencia', 'trabajo', 'carrera', 'roles', 'trayectoria', 'empleo'],
@@ -614,22 +701,22 @@ const KNOWLEDGE_BASE_ES: KnowledgeItem[] = [
   {
     keys: ['educacion', 'estudio', 'estudios', 'grado', 'grados', 'licenciatura', 'formacion', 'academica'],
     answer:
-      'Formación académica y credenciales:\n• Licenciado en Economía por la Universidad de Piura (Perú, 2019–2024), miembro del Claustro Universitario y delegado estudiantil.\n• Intercambios académicos en la Universidad Diego Portales (Chile) y en la Universitat Pompeu Fabra (Barcelona).\n• Formación complementaria:\n  - IESE Business School (Cursos predoctorales, Barcelona, España, 2026)\n  - CAF y Universidad Complutense de Madrid (Diplomado en Gobernabilidad e Innovación Pública, 2026)\n  - EuroTeQ Ignite Bootcamp (IESE, 2026)\n  - Cumbre de la Juventud del Banco Mundial (2025)\n  - Universidad de Oxford — The Oxford Character Project (2025)\n  - Barcelona School of Economics (Economía de la Energía, 2024)\n  - Universitat Pompeu Fabra (Medición de Comportamientos Digitales, 2024)\n  - The Catholic University of America (Derecho y Política, 2023)\n  - Center for Research in Experimental Economics - CREE (2023): https://www.udep.edu.pe/cree/\n  - UNAM (Anthony Thirlwall, 2021): https://res.org.uk/newsletter/obituary-tony-thirlwall/'
+      'Formación académica y credenciales:\n• Licenciado en Economía por la Universidad de Piura (Perú, 2019–2024), miembro del Claustro Universitario y delegado estudiantil.\n• Intercambios académicos en la Universidad Diego Portales (Chile) y en la Universitat Pompeu Fabra (Barcelona).\n• Formación complementaria:\n  - IESE Business School (Cursos predoctorales, Barcelona, España, 2026)\n  - CAF y Universidad Complutense de Madrid (Diplomado en Gobernabilidad e Innovación Pública, 2026)\n  - EuroTeQ Ignite Bootcamp (IESE, 2026)\n  - Cumbre de la Juventud del Banco Mundial (2025)\n  - Universidad de Oxford — The Oxford Character Project (2025)\n  - Barcelona School of Economics (Escuela de Verano de Economía de la Energía 2024, Mar Reguant): https://bse.eu/\n  - Universitat Pompeu Fabra (5ª RECSM Winter Methods School 2024, Mariano Torcal): https://www.upf.edu/web/recsm\n  - The Catholic University of America (Derecho y Política, 2023)\n  - Center for Research in Experimental Economics - CREE (2023): https://www.udep.edu.pe/cree/\n  - UNAM (Anthony Thirlwall, 2021): https://res.org.uk/newsletter/obituary-tony-thirlwall/'
   },
   {
     keys: ['premios', 'becas', 'reconocimientos', 'plata', 'concursos', 'tesis', 'honor'],
     answer:
-      'Premios y reconocimientos:\n• Premio de Plata en la Competición de Innovación de Estudiantes Universitarios de China 2026 (División España)\n• Beca CAF para el Diplomado en Gobernabilidad e Innovación Pública en la Universidad Complutense de Madrid\n• Global Leaders Cohort 2024 (Oxford y St. Gallen, top 1,82%)\n• Embajador de la Red de Jóvenes Líderes IPE\n• 2º puesto en el Premio Ashok Kotwal a la Mejor Tesis (2024)\n• 2º puesto en el CFA Institute Ethics Challenge Perú (2022)\n• Becas de BSE, UPF y The Catholic University of America.'
+      'Premios y reconocimientos:\n• Beca de la cohorte Thinking About Thinking 2026 (ThAT, Princeton, NJ): https://www.thinkingaboutthinking.org/\n• Premio de Plata en la Competición de Innovación de Estudiantes Universitarios de China 2026 (División España)\n• Beca CAF para el Diplomado en Gobernabilidad e Innovación Pública en la Universidad Complutense de Madrid\n• Global Leaders Cohort 2024 (Oxford y St. Gallen, top 1,82%)\n• Embajador de la Red de Jóvenes Líderes IPE\n• 2º puesto en el Premio Ashok Kotwal a la Mejor Tesis (2024, Universidad de Piura): https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4791764\n• 2º puesto en el CFA Institute Ethics Challenge Perú (2022)\n• Semifinalista en el E-Moot Libre Competencia 2022: https://www.instagram.com/p/Cg0YBo1LAQV/?img_index=1\n• Parlamentario Joven 2019 en representación de Piura (Congreso de la República del Perú)\n• Becas de BSE (Economía de la Energía) y UPF / RECSM (Escuela de Métodos de Invierno).'
   },
   {
-    keys: ['charlas', 'conferencias', 'congresos', 'congreso', 'ponencias', 'presentacion', 'foro', '4yfn', 'slush', 'mwc', 'tedx', 'github universe'],
+    keys: ['charlas', 'conferencias', 'congresos', 'congreso', 'ponencias', 'presentacion', 'foro', '4yfn', 'slush', 'mwc', 'tedx', 'github universe', 'ae global summit'],
     answer:
-      'Congresos, conferencias y charlas académicas:\n\n• Congresos y Conferencias:\n  1. GitHub Universe 2026 (Online · 28–29 oct. 2026): https://githubuniverse.com/\n  2. Mobile World Congress 2026 (Barcelona · 3 mar. 2026) — Sesión: The Sovereignty Frontier: Scaling Europe’s Strategic Tech por Josemaria Siota: https://www.mwcbarcelona.com/agenda/sessions/5845-the-sovereignty-frontier-scaling-europes-strategic-tech\n  3. TEDxIESE 2026 (Barcelona · 6 feb. 2026) — Sesión: Do successful companies quietly kill innovation? por Josemaria Siota: https://www.tedxiese.com/\n  4. Hangar 51 Accelerator 2024 (Londres · 27 nov. 2024): https://www.iaginnovation.com/hangar-51/\n  5. Slush 2024 (Helsinki · 20–21 nov. 2024): https://slush.org/\n  6. 4YFN Barcelona 2024 (Barcelona · feb. 2024): https://www.4yfn.com/\n\n• Charlas y Clases Magistrales:\n  • Clase magistral sobre fundamentos de emprendimiento en la Universidad Nacional de Piura (sep. 2026)\n  • Anfitrión del encuentro de IESE con el Dr. Fernando Fernandez sobre living labs (may. 2026)\n  • Ponente en el XIX Foro de Inversión (PAD y Hub UDEP) sobre diseño de políticas europeas para startups (ago. 2025)\n  • Ponente en Hub UDEP sobre ecosistemas de startups más inteligentes (ago. 2025).'
+      'Congresos, conferencias y charlas académicas:\n\n• Congresos y Conferencias:\n  1. The AE Global Summit 2026: Open Problems in AI (Londres · nov. 2026): https://www.algopreneurship.org/\n  2. GitHub Universe 2026 (Online · 28–29 oct. 2026): https://githubuniverse.com/\n  3. Mobile World Congress 2026 (Barcelona · 3 mar. 2026) — Sesión: The Sovereignty Frontier por Josemaria Siota: https://www.mwcbarcelona.com/agenda/sessions/5845-the-sovereignty-frontier-scaling-europes-strategic-tech\n  4. TEDxIESE 2026 (Barcelona · 6 feb. 2026) — Sesión: Do successful companies quietly kill innovation? por Josemaria Siota: https://www.tedxiese.com/\n  5. Hangar 51 Accelerator 2024 (Londres · 27 nov. 2024): https://www.linkedin.com/posts/plug-and-play-uk_the-8th-edition-of-iags-hangar-51-accelerator-activity-7270767020621578240-BkvC\n  6. Slush 2024 (Helsinki · 20–21 nov. 2024): https://slush.org/\n  7. 4YFN Barcelona 2024 (Barcelona · feb. 2024): https://emprenedoria.barcelonactiva.cat/es/4yfn24\n\n• Charlas y Clases Magistrales:\n  • Clase magistral sobre fundamentos de emprendimiento en la Universidad Nacional de Piura (sep. 2026)\n  • Anfitrión del encuentro de IESE con el Dr. Fernando Fernandez sobre living labs (may. 2026)\n  • Ponente en el XIX Foro de Inversión (PAD y Hub UDEP) sobre diseño de políticas europeas para startups (ago. 2025)\n  • Ponente en Hub UDEP sobre ecosistemas de startups más inteligentes (ago. 2025)\n  • Entrevistador en el XL Encuentro de Economistas del BCRP al Dr. Julio Velarde sobre inflación en el Perú (Casona Pardo, oct. 2022)\n  • Ponente en EcoTalks (Entre Economistas) en la Universidad de Piura junto al Dr. Miguel Ángel Carpio (may. 2022).'
   },
   {
     keys: ['cv', 'curriculum', 'descargar'],
     answer:
-      'Puedes consultar o descargar su Curriculum Vitae pulsando el botón "Curriculum Vitae" situado en la barra superior o cabecera de la web.'
+      'Puedes consultar o descargar su CV pulsando el botón "CV" situado en la cabecera del perfil.'
   },
   {
     keys: ['peru', 'origen', 'nacido', 'donde nacio'],
@@ -953,9 +1040,8 @@ export const AskMeAnything: React.FC<AskMeAnythingProps> = ({ currentLang }) => 
     <section className="py-12 border-b border-[var(--rule)]" id="ask">
       <div className="space-y-6">
         <div>
-          <h2 className="sec-heading">
-            <span className="n">06</span>
-            <span>{currentLang === 'en' ? 'Ask me anything' : 'Pregúntame lo que quieras'}</span>
+          <h2 className="text-xs font-mono font-semibold tracking-wider uppercase text-[var(--ink-3)]">
+            {currentLang === 'en' ? 'Ask about David Ricardo' : 'Pregunta sobre David Ricardo'}
           </h2>
         </div>
 
