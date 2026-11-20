@@ -186,7 +186,11 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({ currentLang })
                       className="inline-flex items-center gap-1 text-[var(--signal)] hover:underline cursor-pointer"
                     >
                       <ExternalLink className="h-3 w-3" />
-                      <span>{currentLang === 'en' ? 'Report DOI' : 'Informe DOI'}</span>
+                      <span>
+                        {report.url.includes('doi.org')
+                          ? (currentLang === 'en' ? 'Report DOI' : 'Informe DOI')
+                          : (currentLang === 'en' ? 'View Study' : 'Ver Estudio')}
+                      </span>
                     </span>
                   )}
                   {report.githubUrl && (

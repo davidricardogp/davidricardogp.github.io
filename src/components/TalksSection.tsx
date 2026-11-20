@@ -18,6 +18,105 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
         </div>
 
         <div className="space-y-8">
+          {/* Speaker — Study Launch: ¿Quiénes están invirtiendo? */}
+          <article className="space-y-1 text-[17px] font-prose leading-relaxed">
+            <div className="font-semibold text-[18px]">
+              <a
+                href="https://www.linkedin.com/posts/qui%C3%A9nes-est%C3%A1n-invirtiendo-en-el-per%C3%BA-desde-share-7528516879720628226-YQDk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link inline-flex items-baseline gap-1"
+              >
+                <span>
+                  {currentLang === 'en'
+                    ? 'Speaker — Study Launch: “¿Quiénes están invirtiendo?”'
+                    : 'Ponente — Lanzamiento del Estudio: «¿Quiénes están invirtiendo?»'}
+                </span>
+                <ExternalLink className="h-3 w-3 opacity-60 shrink-0 self-center" />
+              </a>
+            </div>
+            <div className="text-xs font-label text-[var(--ink-3)] font-mono">
+              <a
+                href="https://pad.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                {currentLang === 'en' ? 'PAD - School of Management' : 'PAD - Escuela de Dirección'}
+              </a>
+              {', '}
+              <a
+                href="https://www.hub.udep.pe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                Hub UDEP
+              </a>{' '}
+              · {currentLang === 'en' ? 'Lima, Peru · Nov. 19, 2026' : 'Lima, Perú · 19 Nov. 2026'}
+            </div>
+            <p className="text-[17px] text-[var(--ink-2)] font-prose">
+              {currentLang === 'en'
+                ? 'Presented the study '
+                : 'Presentación del estudio '}
+              <a
+                href="https://www.hub.udep.pe/estudio-inversion-angel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                «¿Quiénes están invirtiendo? Una mirada al ecosistema de inversión ángel y la participación de las mujeres en el Perú»
+              </a>
+              {currentLang === 'en'
+                ? ', organised by '
+                : ', organizado por '}
+              <a
+                href="https://www.udep.edu.pe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                {currentLang === 'en' ? 'University of Piura' : 'Universidad de Piura'}
+              </a>
+              {', '}
+              <a
+                href="https://www.hub.udep.pe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                Hub UDEP
+              </a>
+              {', '}
+              <a
+                href="https://pad.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                {currentLang === 'en' ? 'PAD Business Angels Network' : 'PAD - Red de Inversionistas Ángeles'}
+              </a>
+              {', '}
+              <a
+                href="https://swissep.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                Swiss EP
+              </a>
+              {currentLang === 'en' ? ', and ' : ' y '}
+              <a
+                href="https://www.swisscontact.org/en/where-we-work/peru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="academic-link"
+              >
+                Swisscontact
+              </a>.
+            </p>
+          </article>
+
           {/* Guest Lecture — Entrepreneurship Fundamentals */}
           <article className="space-y-1 text-[17px] font-prose leading-relaxed">
             <div className="font-semibold text-[18px]">
@@ -159,7 +258,7 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
               </a>{' '}
               {currentLang === 'en' ? 'and' : 'y'}{' '}
               <a
-                href="https://hub.udep.pe/"
+                href="https://www.hub.udep.pe/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="academic-link"
@@ -200,7 +299,7 @@ export const TalksSection: React.FC<TalksSectionProps> = ({ currentLang }) => {
               </a>
               {', '}
               <a
-                href="https://hub.udep.pe/"
+                href="https://www.hub.udep.pe/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="academic-link"

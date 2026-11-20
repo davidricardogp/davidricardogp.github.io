@@ -263,6 +263,22 @@ export const DAVID_DATA = {
 
   policyReports: [
     {
+      id: "report-angel-2026",
+      title: "¿Quiénes están invirtiendo? Una mirada al ecosistema de inversión ángel y la participación de las mujeres en el Perú",
+      authors: "Gonzales, D. R., Rodrich, C., Cordero, C., & Ordonio, K. (2026)",
+      meta: "Hub UDEP, University of Piura · Nov. 2026",
+      citation: "Gonzales, D. R., Rodrich, C., Cordero, C., & Ordonio, K. (2026). ¿Quiénes están invirtiendo? Una mirada al ecosistema de inversión ángel y la participación de las mujeres en el Perú. Hub UDEP – Centro de Innovación y Emprendimiento, Universidad de Piura. https://www.hub.udep.pe/estudio-inversion-angel",
+      url: "https://www.hub.udep.pe/estudio-inversion-angel",
+      type: "report",
+      badge: "Research Study",
+      badgeEs: "Estudio de Investigación",
+      origin: "Published by Hub UDEP – Center for Innovation and Entrepreneurship at the University of Piura, in collaboration with PAD - School of Management (Business Angels Network), Swiss Entrepreneurship Program (Swiss EP), and Swisscontact, with the support of the Embassy of Switzerland in Peru (SECO).",
+      originEs: "Publicado por Hub UDEP – Centro de Innovación y Emprendimiento de la Universidad de Piura, en colaboración con PAD - Escuela de Dirección (Red de Inversionistas Ángeles), Swiss Entrepreneurship Program (Swiss EP) y Swisscontact, con el apoyo de la Embajada de Suiza en el Perú (SECO).",
+      summary: "An empirical study examining the structure, dynamics, and investor profiles of Peru’s angel investment ecosystem, with a dedicated focus on women’s participation as angel investors and founders. Draws on ecosystem data to provide insights for strengthening early-stage venture financing and inclusive capital formation in Peru.",
+      summaryEs: "Estudio empírico que examina la estructura, las dinámicas y el perfil de quienes conforman el ecosistema de inversión ángel en el Perú, con especial énfasis en la participación de las mujeres. Aporta evidencia clave para fortalecer el financiamiento en etapas tempranas y la formación de capital inclusivo en el país.",
+      jel: "G24, L26, J16, O54"
+    },
+    {
       id: "report-1",
       title: "Corporate Venturing Ecosystem: How Can Policymakers Better Support Corporate-Scaleup Collaborations in EU Deep-Tech?",
       authors: "Siota, J., Singleton, R., Gonzales, D. R., & Yáñez, G. (2026)",
@@ -655,6 +671,16 @@ export const DAVID_DATA = {
   ],
 
   talks: [
+    {
+      id: "talk-0",
+      title: "Speaker — Study Launch: “¿Quiénes están invirtiendo?”",
+      titleEs: "Ponente — Lanzamiento del Estudio: «¿Quiénes están invirtiendo?»",
+      meta: "PAD - School of Management, Hub UDEP · Lima, Peru · Nov. 19, 2026",
+      metaEs: "PAD - Escuela de Dirección, Hub UDEP · Lima, Perú · 19 Nov. 2026",
+      description: "Presented the study “¿Quiénes están invirtiendo? Una mirada al ecosistema de inversión ángel y la participación de las mujeres en el Perú”, organised by University of Piura, Hub UDEP, PAD Business Angels Network, Swiss EP, and Swisscontact.",
+      descriptionEs: "Presentación del estudio «¿Quiénes están invirtiendo? Una mirada al ecosistema de inversión ángel y la participación de las mujeres en el Perú», organizado por la Universidad de Piura, Hub UDEP, PAD - Red de Inversionistas Ángeles, Swiss EP y Swisscontact.",
+      url: "https://www.linkedin.com/posts/qui%C3%A9nes-est%C3%A1n-invirtiendo-en-el-per%C3%BA-desde-share-7528516879720628226-YQDk/"
+    },
     {
       id: "talk-1",
       title: "Guest Lecture — Entrepreneurship Fundamentals",

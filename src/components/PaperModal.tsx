@@ -213,7 +213,9 @@ export const PaperModal: React.FC<PaperModalProps> = ({
                 <span>
                   {paper.type === 'book'
                     ? (currentLang === 'en' ? 'View Book (Amazon)' : 'Ver Libro (Amazon)')
-                    : (currentLang === 'en' ? 'Read Paper / Publication' : 'Leer Publicación / DOI')}
+                    : paper.url.includes('doi.org')
+                      ? (currentLang === 'en' ? 'Read Paper / Publication' : 'Leer Publicación / DOI')
+                      : (currentLang === 'en' ? 'Read Publication' : 'Leer Publicación')}
                 </span>
                 <ExternalLink className="h-3 w-3" />
               </a>
